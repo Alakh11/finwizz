@@ -39,7 +39,12 @@
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--brand-primary) !important;
+    color: #0404dd !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0404dd !important;
+    border-bottom: 3px solid #0404dd !important;
 }
 
 .breadcrumb-item a {
@@ -199,6 +204,14 @@
         align-items: center;
         justify-content: flex-end;
         padding-right: 75px;
+    }
+
+    .navbar-nav .nav-link.active {
+        border-bottom: none !important;
+    }
+
+    .navbar-collapse {
+        background: #f5f5f5;
     }
 }
 
