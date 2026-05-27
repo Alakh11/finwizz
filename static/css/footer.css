@@ -90,7 +90,17 @@
 }
 
 .social-links a:hover {
-    background-color: #000066;
+    background-color: #ffffff !important;
+}
+.list-unstyled li a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.list-unstyled li a:hover {
+    color: #0404dd !important;
 }
 .footer-title {
     color: #000066;

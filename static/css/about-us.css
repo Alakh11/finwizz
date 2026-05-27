@@ -52,6 +52,10 @@
     width: 360px;
     height: 290px;
 }
+.img-fluid-popup {
+    width: 275px;
+    height: 250px;
+}
 
 .gallery {
     display: flex;
