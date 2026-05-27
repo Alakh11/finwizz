@@ -1,0 +1,87 @@
+{% load static %}
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a class="" href="{% url 'home' %}">
+                    <img src="{{ MEDIA_IMG_URL }}images/logo-finwizz.png" alt="Finwizz" height="40">
+                </a>
+                <h6>
+                    Finwizz Financial Services Pvt. Ltd
+                </h6>
+                <p class="text-muted">
+                    Address: Office No. 101 TO 104, First Floor,<br> Vikram Goldmine, OFF. F C Road, Pune 411004
+                </p>
+                <!-- <a class="footer_call" href="tel:18002588333">
+                    <h4>
+                        Toll Free: 18002588333</h4>
+                </a> -->
+                <div >
+                    <h6>Follow Us On:</h6>
+                    <div class="social-links">
+                    <a href="https://www.facebook.com/FinwizzLoansFISPL" rel="noopener" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/finwizzloans/" rel="noopener" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/finwizz/" rel="noopener" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-3 footer-title">Company</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{% url 'about_us' %}"
+                            class="text-muted text-decoration-none hover-white">About Us</a></li>
+                    <li class="mb-2"><a href="{% url 'careers' %}"
+                            class="text-muted text-decoration-none hover-white">Careers</a></li>
+                    <li class="mb-2"><a href="{% url 'blogs' %}"
+                            class="text-muted text-decoration-none hover-white">Blogs</a></li>
+                    <li class="mb-2"><a href="{% url 'branch_locator' %}"
+                            class="text-muted text-decoration-none hover-white">Branch Locator</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-3 footer-title">Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{% url 'personal_loan' %}"
+                            class="text-muted text-decoration-none hover-white">Personal Loan</a></li>
+                    <li class="mb-2"><a href="{% url 'business_loan' %}"
+                            class="text-muted text-decoration-none hover-white">Business Loan</a></li>
+                    <li class="mb-2"><a href="{% url 'home_loan' %}"
+                            class="text-muted text-decoration-none hover-white">Home Loan</a></li>
+                            <li class="mb-2"><a href="{% url 'commercial_loan' %}"
+                            class="text-muted text-decoration-none hover-white">Commercial Property Loan</a></li>    
+                            <li class="mb-2"><a href="{% url 'lap_loan' %}"
+                            class="text-muted text-decoration-none hover-white">Loan Against Property (LAP)</a></li>
+                            <li class="mb-2"><a href="{% url 'doctors_loan' %}"
+                            class="text-muted text-decoration-none hover-white">Loan for Doctors</a></li>
+                            <li class="mb-2"><a href="{% url 'used_car_loan' %}"
+                            class="text-muted text-decoration-none hover-white">Used Car Loan</a></li>
+                            <li class="mb-2"><a href="{% url 'credit_card' %}"
+                            class="text-muted text-decoration-none hover-white">Credit Cards</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-3 footer-title">Contact Us</h5>
+                <ul class="list-unstyled text-muted">
+                    <!-- <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@finwizz.com</li> -->
+                    <li class="mb-2 phone-number"><i class="fas fa-phone me-2"></i> <a href="tel:18002588333">18002588333</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="border-secondary">
+        <div class="row pt-2">
+            <div class="col-12 text-center text-muted">
+                <p>&copy; {% now "Y" %} Finwizz. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -29,7 +29,7 @@
 }
 
 .footer_call h4 {
-    color: #09a223;
+    color: #000066;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -78,15 +78,33 @@
     justify-content: center;
     width: 35px;
     height: 35px;
-    background-color: #09a223;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #247fe1;
     border-radius: 4px;
     text-decoration: none;
     transition: background 0.3s ease;
 }
 
+.social-links i {
+    font-size: 18px;
+}
+
 .social-links a:hover {
     background-color: #000066;
+}
+.footer-title {
+    color: #000066;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.phone-number a {
+    color: #000066 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+ .phone-number a:hover {
+    color: #0404dd !important;
 }
 
 /* Bottom Bar */

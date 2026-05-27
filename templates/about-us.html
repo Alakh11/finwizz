@@ -1,5 +1,177 @@
 {% extends 'base.html' %}
-{% block content %}
 
-    <h1>alakh.chaturvedi</h1>
+{% block title %}About Us - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/about-us.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+    <section class="bg-light py-3 border-bottom">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <img src="{{ MEDIA_IMG_URL }}images/BANNER-01-scaled.jpg" alt="Finwizz About Us" class="img-fluid rounded mb-5 shadow-sm" />
+            
+            <div class="row justify-content-center">
+                <div class="content-section text-muted">
+                    <p>The dynamic journey of Finwizz is hinged on one simple philosophy that everyone deserves to live their lives to their fullest potential.</p>
+                    <p>The seed that was sown way back in 2005 by three passionate individuals from the banking sector has reaped numerous milestones as we walk through the journey of making transformative impact in the lives of people. Yet, the most valuable asset we’ve reaped is the unwavering faith of our customers borne from our credibility to help them make responsible decisions about their finance.</p>
+                    <p>Over the years our services have enhanced, we have evolved and our business has grown. But what has remained as solid as a rock is our core philosophy of making loans accessible to people from all walks of life. 1000 fulfilled dreams across the country and crores of loans later, we give ourselves a pat on the back knowing someone, somewhere is living a life of their dreams with the support of FINWIZZ.</p>
+                    <p>The journey that begun with three individuals is today a culmination of a dynamic workforce contributing to the growth of the company. At Finwizz, we strive to create an equal opportunity workplace where hard-work is rewarded and talent nurtured.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our_team">
+        <div class="container">
+              <h2 class="mt-4 gallery-heading">Meet the trio who started it all</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <img src="{{ MEDIA_IMG_URL }}images/Syeed-Haseeb.jpg" class="card-img-top" alt="Syed Haseeb">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mt-3">Syed Haseeb</h4>
+                            <h6 class="text-muted mb-3">Founder / Director</h6>
+                            <p class="card-text text-muted small flex-grow-1">Syed Haseeb had been an adept manager of Personal Loans in ICICI Bank before he was..</p>
+                            <button class="btn btn-outline-danger btn-sm mx-auto mt-2 px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#teamModal1">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <img src="{{ MEDIA_IMG_URL }}images/AnilMathew.jpg" class="card-img-top" alt="Anil Mathew">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mt-3">Anil Mathew</h4>
+                            <h6 class="text-muted mb-3">Founder / Director</h6>
+                            <p class="card-text text-muted small flex-grow-1">Known as an compliance marvel of sorts within the team, Anil Mathew holds an MBA in..</p>
+                            <button class="btn btn-outline-danger btn-sm mx-auto mt-2 px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#teamModal2">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <img src="{{ MEDIA_IMG_URL }}images/rajeev_singhvi.jpg" class="card-img-top" alt="Rajeev Singhvi">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mt-3">Rajeev Singhvi</h4>
+                            <h6 class="text-muted mb-3">Founder / Director</h6>
+                            <p class="card-text text-muted small flex-grow-1">Armed with double degrees in Law & Commerce, our Legal Wizard Rajeev Singhvi has over 25..</p>
+                            <button class="btn btn-outline-danger btn-sm mx-auto mt-2 px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#teamModal3">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 gallery-section">
+        <div class="container text-center">
+            
+            <div class="gallery">
+                <div class="">
+                    <a href="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.13-PM.jpeg" target="_blank">
+                        <img src="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.13-PM.jpeg" class="img-fluid-main rounded shadow" alt="Gallery 1">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.14-PM.jpeg" target="_blank">
+                        <img src="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.14-PM.jpeg" class="img-fluid-main rounded shadow" alt="Gallery 2">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.15-PM.jpeg" target="_blank">
+                        <img src="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.15-PM.jpeg" class="img-fluid-main rounded shadow" alt="Gallery 3">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.12-PM.jpeg" target="_blank">
+                        <img src="{{ MEDIA_IMG_URL }}images/WhatsApp-Image-2023-12-11-at-5.13.12-PM.jpeg" class="img-fluid-main rounded shadow" alt="Gallery 4">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="teamModal1" tabindex="-1" aria-labelledby="teamModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-center mb-4 mb-md-0">
+                            <img src="{{ MEDIA_IMG_URL }}images/Syeed-Haseeb.jpg" alt="Syed Haseeb" class="img-fluid-main rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mb-1 text-danger fw-bold" id="teamModal1Label">Syed Haseeb</h3>
+                            <h6 class="text-muted mb-4">Founder / Director</h6>
+                            <p class="text-muted lh-lg">Syed Haseeb had been an adept manager of Personal Loans in ICICI Bank before he was bitten by the entrepreneurship bug. With over 20 years of experience in Banking, this tech maverick is driven by solving problems and developing long-term relationships with customers. His authenticity is evident in every interaction he has at Finwizz and beyond. He is based in Mumbai and loves to indulge in water sports with family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="teamModal2" tabindex="-1" aria-labelledby="teamModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-center mb-4 mb-md-0">
+                            <img src="{{ MEDIA_IMG_URL }}images/AnilMathew.jpg" alt="Anil Mathew" class="img-fluid-main rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mb-1 text-danger fw-bold" id="teamModal2Label">Anil Mathew</h3>
+                            <h6 class="text-muted mb-4">Founder / Director</h6>
+                            <p class="text-muted lh-lg">Known as an compliance marvel of sorts within the team, Anil Mathew holds an MBA in Finance and brings 23 years of experience in Banking & Capital Markets. He started his career with Cargill Investor Services and later joined ICICI Bank in its unsecured business division. He was with Citibank NA in its Mortgage Business just before the inception of Finwizz. A natural with numbers, he is energised by compliance challenges. Based in Pune, he loves exploring new places with his family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="teamModal3" tabindex="-1" aria-labelledby="teamModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-center mb-4 mb-md-0">
+                            <img src="{{ MEDIA_IMG_URL }}images/rajeev_singhvi.jpg" alt="Rajeev Singhvi" class="img-fluid-main rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mb-1 text-danger fw-bold" id="teamModal3Label">Rajeev Singhvi</h3>
+                            <h6 class="text-muted mb-4">Founder / Director</h6>
+                            <p class="text-muted lh-lg">Armed with double degrees in Law & Commerce, our Legal Wizard Rajeev Singhvi has over 25 years of experience in Banking & Finance. He has been associated with Escorts Finance, Apple Finance & Transamerica Finance. His last endeavour was with ICICI Bank as Regional Manager of Personal Loans, in Mumbai. A perfectionist by nature, unwavering in outlook and a thoughtful mentor to the Finwizz team, he leads by example and makes sure the growth goes beyond and above business. He is based in Ahmedabad, an innate sports enthusiast, where you are most likely to run into him on tennis courts or in the wilderness off-roading along with his friends and family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/about-us.js"></script>
 {% endblock %}
