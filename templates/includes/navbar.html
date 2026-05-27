@@ -67,10 +67,6 @@
                     <a class="nav-link {% if request.resolver_match.url_name == 'careers' %}active{% endif %}"
                         href="{% url 'careers' %}">Careers</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'contact_us' %}active{% endif %}"
-                        href="{% url 'contact_us' %}">Contact Us</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="{% url 'contact_us' %}" id="contactUsDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">

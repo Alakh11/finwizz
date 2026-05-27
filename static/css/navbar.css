@@ -181,8 +181,12 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 }
-
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
+.navbar-nav .nav-link {
+    padding: 10px 14px !important;
+}
+}
+@media (max-width: 991px) {
     .top-header-left {
         width: 60%;
         background: #000066;
@@ -215,7 +219,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .top-header-left {
         width: 85%;
         font-size: 12px;
@@ -237,7 +241,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .top-header {
         display: none;
     }
