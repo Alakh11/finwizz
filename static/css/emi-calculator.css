@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f5f7fb;
+}
+
+/* SECTION */
+.emi-section{
+    padding:70px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADING */
+.emi-heading{
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+    color:#000066;
+    margin-bottom:50px;
+}
+
+/* MAIN WRAPPER */
+.emi-wrapper{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+/* LEFT SIDE */
+.emi-left{
+    width:65%;
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* RIGHT SIDE */
+.emi-right{
+    width:35%;
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    position:sticky;
+    top:20px;
+}
+
+/* TABS */
+.loan-tabs{
+    display:flex;
+    list-style:none;
+    margin-bottom:35px;
+    border-bottom:1px solid #ececec;
+}
+
+.loan-tabs li{
+    margin-right:25px;
+}
+
+.loan-tabs li a{
+    display:inline-block;
+    padding-bottom:14px;
+    text-decoration:none;
+    color:#777;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.loan-tabs li.active a{
+    color:#000066;
+    border-bottom:3px solid #000066;
+}
+
+/* FORM */
+.form-row{
+    display:flex;
+    gap:20px;
+}
+
+.form-group{
+    width:100%;
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:12px;
+    color:#222;
+}
+
+.form-control{
+    width:100%;
+    height:55px;
+    border:1px solid #dcdcdc;
+    border-radius:10px;
+    padding:0 18px;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
+}
+
+.form-control:focus{
+    border-color:#000066;
+    box-shadow:0 0 0 4px rgba(0,0,102,0.08);
+}
+
+/* TENURE */
+.tenure-group{
+    display:flex;
+    gap:15px;
+}
+
+.tenure-group input{
+    width:70%;
+}
+
+.tenure-group select{
+    width:30%;
+}
+
+/* BUTTONS */
+.btn-group-wrap{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+
+.emi-btn{
+    height:52px;
+    padding:0 30px;
+    border:none;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.primary-btn{
+    background:#000066;
+    color:#fff;
+}
+
+.primary-btn:hover{
+    background:#10108c;
+}
+
+.secondary-btn{
+    background:#e53935;
+    color:#fff;
+}
+
+.secondary-btn:hover{
+    background:#cc2f2b;
+}
+
+/* RESULT */
+.result-title{
+    font-size:28px;
+    font-weight:700;
+    color:#000066;
+    margin-bottom:30px;
+}
+
+.result-box{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.result-item{
+    background:#f7f8fc;
+    padding:22px;
+    border-radius:14px;
+}
+
+.result-item span{
+    display:block;
+    color:#666;
+    margin-bottom:8px;
+    font-size:15px;
+}
+
+.result-item strong{
+    font-size:26px;
+    color:#000066;
+}
+
+/* INFO BOX */
+.emi-info-box{
+    margin-top:40px;
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.emi-info-box h3{
+    font-size:30px;
+    color:#000066;
+    margin-bottom:20px;
+}
+
+.emi-info-box p{
+    color:#555;
+    line-height:32px;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+/* ERROR */
+.emi_error_msg{
+    color:red;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:991px){
+
+    .emi-wrapper{
+        flex-direction:column;
+    }
+
+    .emi-left,
+    .emi-right{
+        width:100%;
+    }
+
+    .emi-right{
+        position:relative;
+        top:0;
+    }
+
+    .form-row{
+        flex-direction:column;
+        gap:0;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .emi-heading{
+        font-size:32px;
+    }
+
+    .tenure-group{
+        flex-direction:column;
+    }
+
+    .tenure-group input,
+    .tenure-group select{
+        width:100%;
+    }
+
+    .btn-group-wrap{
+        flex-direction:column;
+    }
+
+    .emi-btn{
+        width:100%;
+    }
+
+}

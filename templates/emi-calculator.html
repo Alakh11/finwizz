@@ -7,18 +7,154 @@
 {% endblock %}
 
 {% block content %}
-    <section class="bg-light py-3 border-bottom">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Emi Calculator</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Emi Calculator</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section class="emi-section">
 
-    
+    <div class="container">
+
+        <h2 class="emi-heading">EMI Calculator</h2>
+
+        <div class="emi-wrapper">
+
+            <!-- LEFT -->
+            <div class="emi-left">
+
+                <!-- TABS -->
+                <!-- <ul class="loan-tabs">
+                    <li class="active">
+                        <a href="#">Home Loan</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Personal Loan</a>
+                    </li>
+                </ul> -->
+
+                <!-- FORM -->
+                <form id="emi-calculate">
+
+                    <div class="emi_error_msg">
+                        <span id="emi_msg"></span>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Loan Amount</label>
+
+                            <input type="number" id="emi_loan_amount" class="form-control"
+                                placeholder="Enter Loan Amount">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Interest Rate (%)</label>
+
+                            <input type="number" id="emi_interest_rate" class="form-control"
+                                placeholder="Enter Interest Rate">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group full-width">
+
+                        <label>Loan Tenure</label>
+
+                        <div class="tenure-group">
+
+                            <input type="number" id="emi_tenure" class="form-control" placeholder="Enter Tenure">
+
+                            <select id="emi_months_years" class="form-control">
+
+                                <option value="months">Months</option>
+                                <option value="years">Years</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="btn-group-wrap">
+
+                        <button type="submit" class="emi-btn primary-btn">
+                            Calculate EMI
+                        </button>
+
+                        <button type="reset" id="emireset" class="emi-btn secondary-btn">
+                            Reset
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="emi-right">
+
+                <h3 class="result-title">Loan Summary</h3>
+
+                <div class="result-box">
+
+                    <div class="result-item">
+                        <span>Monthly EMI</span>
+                        <strong id="result_emi">0 INR</strong>
+                    </div>
+
+                    <div class="result-item">
+                        <span>Total Interest</span>
+                        <strong id="total_interest">0 INR</strong>
+                    </div>
+
+                    <div class="result-item">
+                        <span>Total Payment</span>
+                        <strong id="total_payments">0 INR</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- INFO -->
+        <div class="emi-info-box">
+
+            <h3>What is EMI?</h3>
+
+            <p>
+                It is a fixed payment amount mutually agreed by the lender and the borrower, where the borrower agrees
+                to pay the lender on a specified date each calendar month. EMI stands for EQUATED MONTHLY INSTALLMENTS
+                which are used to pay off both interest and principal each month, so that over a specified number of
+                years, the loan is paid off in full. Initially EMI has higher interest amount than the principal amount
+                that begins to decline with loan repayments.
+            </p>
+            <h3>Why EMI?</h3>
+            <p>
+                The benefit of an EMI for borrowers is that they know precisely how much money they will need to pay
+                towards their loan each month and on which date, making their personal budgeting process easier. The
+                borrowers can choose from a list of varied repayment options. Loan track record is easily available
+                online or with the banks. These records can provide details of number of EMI for a loan, Principal
+                Amount, Rate Of Interest, Pending EMI, etc.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 {% endblock %}
 
 {% block extra_js %}
