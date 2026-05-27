@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Emi Calculator - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/emi-calculator.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+    <section class="bg-light py-3 border-bottom">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Emi Calculator</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/emi-calculator.js"></script>
+{% endblock %}
