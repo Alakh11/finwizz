@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/contact-us.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <div class="container">
+
+        <div class="contact-heading-wrap">
+            <h2 class="contact-heading">Contact Us</h2>
+
+            <p class="contact-subheading">
+                If you have any concerns, we’re all ears.
+            </p>
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- LEFT CONTENT -->
+            <div class="contact-left">
+
+                <div class="contact-card">
+
+                    <h3>We’re Here To Help</h3>
+
+                    <p>
+                        We take your concerns very seriously and with utmost sincerity.
+                        Your complaint will be immediately forwarded to the management.
+                    </p>
+
+                    <p>
+                        One of our executives will get in touch with you within 24 hours
+                        to help resolve the issue as soon as possible.
+                    </p>
+
+                    <ul class="contact-points">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:18002588333">1800 258 8333</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:support@finwizz.com">
+                                support@finwizz.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            Monday - Saturday : 9:00 AM - 7:00 PM
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="contact-right">
+
+                <form id="contactForm" method="POST" novalidate>
+                    {% csrf_token %}
+
+                    <div class="form-group">
+                        <label for="contact_name">Your Name</label>
+
+                        <input type="text" id="contact_name" name="contact_name" class="form-control"
+                            placeholder="Enter Your Name" minlength="3" maxlength="100"
+                            onkeypress="return CharsetKeyOnly(event);" autocomplete="off">
+
+                        <span class="help-block"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_email">Your Email</label>
+
+                        <input type="email" id="contact_email" name="contact_email" class="form-control"
+                            placeholder="Enter Your Email" minlength="5" maxlength="100" autocomplete="off">
+
+                        <span class="help-block"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_subject">Subject</label>
+
+                        <input type="text" id="contact_subject" name="contact_subject" class="form-control"
+                            placeholder="Enter Subject" minlength="3" maxlength="100" autocomplete="off">
+
+                        <span class="help-block"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_message">Your Message</label>
+
+                        <textarea id="contact_message" name="contact_message" class="form-control textarea-control"
+                            placeholder="Write Your Message" minlength="10" maxlength="500"></textarea>
+
+                        <span class="help-block"></span>
+                    </div>
+
+                    <button type="submit" class="contact-btn">
+
+                        <span class="btn-text">
+                            Submit
+                        </span>
+
+                        <span class="btn-loader">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            Processing...
+                        </span>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/contact-us.js"></script>
+{% endblock %}
