@@ -173,6 +173,42 @@
 }
 
 
+.contact-dropdown .dropdown-menu{
+
+    display:block;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+
+    margin-top:0;
+    border:none;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    padding:10px 0;
+
+}
+
+.contact-dropdown .dropdown-menu.show{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+
+}
+
+
+.contact-dropdown .dropdown-item:hover{
+
+    background:#f5f7fb;
+    color:#000066;
+
+}
+
 @media (min-width: 992px) {
     .navbar .dropdown:hover .dropdown-menu {
         display: block;

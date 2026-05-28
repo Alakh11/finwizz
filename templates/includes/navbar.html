@@ -68,15 +68,36 @@
                         href="{% url 'careers' %}">Careers</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{% url 'contact_us' %}" id="contactUsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Contact Us
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="contactUsDropdown">
-                        <li><a class="dropdown-item" href="{% url 'apply_loans' %}">Apply For Loans</a></li>
-                        <li><a class="dropdown-item" href="{% url 'contact_us' %}">Grievance</a></li>
-                    </ul>
-                </li>
+                   <li class="nav-item dropdown contact-dropdown">
+
+    <a class="nav-link dropdown-toggle contact-link"
+       href="{% url 'contact_us' %}"
+       id="contactUsDropdown"
+       role="button">
+
+        Contact Us
+
+    </a>
+
+    <ul class="dropdown-menu">
+
+        <li>
+            <a class="dropdown-item"
+               href="{% url 'apply_loans' %}">
+                Apply For Loans
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="{% url 'contact_us' %}">
+                Grievance
+            </a>
+        </li>
+
+    </ul>
+
+</li>
             </ul>
         </div>
     </div>
