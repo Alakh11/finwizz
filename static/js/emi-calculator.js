@@ -1,92 +1,158 @@
 $(document).ready(function () {
 
-    // EMI CALCULATION
     $("#emi-calculate").on("submit", function (e) {
 
         e.preventDefault();
 
-        let loanAmount = $("#emi_loan_amount").val();
-        let interestRate = $("#emi_interest_rate").val();
-        let tenure = $("#emi_tenure").val();
+        let loanAmount = $("#emi_loan_amount").val().trim();
+        let interestRate = $("#emi_interest_rate").val().trim();
+        let tenure = $("#emi_tenure").val().trim();
         let tenureType = $("#emi_months_years").val();
 
         let currency = "INR";
 
-        // VALIDATION
-        if (loanAmount == "" || loanAmount == 0) {
-            flashMsg("Please Enter Loan Amount");
+        removeErrors();
+
+        let hasError = false;
+
+        if (loanAmount === "" || parseFloat(loanAmount) <= 0) {
+
+            showError(
+                "#emi_loan_amount",
+                "Please enter loan amount"
+            );
+
+            hasError = true;
+        }
+
+        if (interestRate === "" || parseFloat(interestRate) <= 0) {
+
+            showError(
+                "#emi_interest_rate",
+                "Please enter interest rate"
+            );
+
+            hasError = true;
+        }
+
+        if (tenure === "" || parseInt(tenure) <= 0) {
+
+            showError(
+                "#emi_tenure",
+                "Please enter loan tenure"
+            );
+
+            hasError = true;
+        }
+
+        if (hasError) {
             return;
         }
 
-        if (interestRate == "" || interestRate == 0) {
-            flashMsg("Please Enter Interest Rate");
-            return;
-        }
+        const calculateBtn = $("#calculateBtn");
 
-        if (tenure == "" || tenure == 0) {
-            flashMsg("Please Enter Loan Tenure");
-            return;
-        }
+        calculateBtn.addClass("loading");
+        calculateBtn.prop("disabled", true);
 
-        // CONVERT YEARS TO MONTHS
-        let months = tenureType === "years"
-            ? tenure * 12
-            : tenure;
+        setTimeout(function () {
 
-        // EMI FORMULA
-        let monthlyInterestRate = interestRate / 12 / 100;
+            let months =
+                tenureType === "years"
+                    ? tenure * 12
+                    : tenure;
 
-        let emi =
-            loanAmount *
-            monthlyInterestRate *
-            Math.pow(1 + monthlyInterestRate, months) /
-            (Math.pow(1 + monthlyInterestRate, months) - 1);
+            let monthlyInterestRate =
+                interestRate / 12 / 100;
 
-        let totalPayment = emi * months;
+            let emi =
+                loanAmount *
+                monthlyInterestRate *
+                Math.pow(1 + monthlyInterestRate, months) /
+                (Math.pow(1 + monthlyInterestRate, months) - 1);
 
-        let totalInterest = totalPayment - loanAmount;
+            let totalPayment = emi * months;
 
-        // UPDATE UI
-        $("#result_emi").html(
-            formatCurrency(emi) + " " + currency
-        );
+            let totalInterest =
+                totalPayment - loanAmount;
 
-        $("#total_interest").html(
-            formatCurrency(totalInterest) + " " + currency
-        );
+            $("#result_emi").html(
+                formatCurrency(emi) + " " + currency
+            );
 
-        $("#total_payments").html(
-            formatCurrency(totalPayment) + " " + currency
-        );
+            $("#total_interest").html(
+                formatCurrency(totalInterest) + " " + currency
+            );
+
+            $("#total_payments").html(
+                formatCurrency(totalPayment) + " " + currency
+            );
+
+            calculateBtn.removeClass("loading");
+            calculateBtn.prop("disabled", false);
+
+        }, 800);
 
     });
 
-    // RESET
     $("#emireset").click(function () {
 
+        removeErrors();
+
         $("#result_emi").html("0 INR");
+
         $("#total_interest").html("0 INR");
+
         $("#total_payments").html("0 INR");
 
-        $("#emi_msg").html("");
+    });
+
+    $(".form-control").on("keyup change", function () {
+
+        $(this).removeClass("invalid");
+
+        $(this)
+            .closest(".form-group")
+            .find(".help-block")
+            .remove();
 
     });
 
 });
 
-/* ERROR MESSAGE */
-function flashMsg(message){
 
-    $("#emi_msg").html(message);
+function showError(input, message) {
 
-    setTimeout(function () {
-        $("#emi_msg").html("");
-    }, 2000);
+    $(input).addClass("invalid");
+
+    let parent =
+        $(input).closest(".form-group");
+
+    if (
+        parent.find(".help-block").length === 0
+    ) {
+
+        parent.append(
+            '<span class="help-block">' +
+            message +
+            "</span>"
+        );
+
+    }
 
 }
 
-/* FORMAT NUMBER */
-function formatCurrency(amount){
+function removeErrors() {
+
+    $(".help-block").remove();
+
+    $(".form-control").removeClass(
+        "invalid"
+    );
+
+}
+
+
+function formatCurrency(amount) {
 
     return parseFloat(amount)
         .toLocaleString("en-IN", {
