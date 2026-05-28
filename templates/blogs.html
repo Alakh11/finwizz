@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+
+{% block title %}Blogs - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/blogs.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="blog-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Blog</h2>
+            <p>
+                Explore our latest financial insights, loan guides and banking tips.
+            </p>
+        </div>
+
+        <div class="blog-grid">
+
+            <!-- BLOG CARD -->
+            <div class="blog-card">
+
+                <a href="#" class="blog-image">
+                    <img src="{{ MEDIA_IMG_URL }}images/Blog-2.png"
+                        alt="10 Best Bank for Business Loan in India">
+                </a>
+
+                <div class="blog-content">
+
+                    <h3>
+                        <a href="#">
+                            10 Best Bank for Business Loan in India
+                        </a>
+                    </h3>
+
+                    <p>
+                        Business loan is one of the great ways to fulfill various
+                        business needs including working capital and short term cash flow.
+                    </p>
+
+                    <!-- <a href="#" class="read-more-btn">
+                        Read More
+                    </a> -->
+
+                </div>
+
+            </div>
+
+            <!-- BLOG CARD -->
+            <div class="blog-card">
+
+                <a href="#" class="blog-image">
+                    <img src="{{ MEDIA_IMG_URL }}images/Personal-Loan-01.png"
+                        alt="Personal Loan for Self Employed">
+                </a>
+
+                <div class="blog-content">
+
+                    <h3>
+                        <a href="#">
+                            How to avail a personal loan for self employed
+                        </a>
+                    </h3>
+
+                    <p>
+                        Self employed individuals can also get personal loans easily
+                        with proper documentation and eligibility.
+                    </p>
+
+                    <!-- <a href="#" class="read-more-btn">
+                        Read More
+                    </a> -->
+
+                </div>
+
+            </div>
+
+            <!-- BLOG CARD -->
+            <div class="blog-card">
+
+                <a href="#" class="blog-image">
+                    <img src="{{ MEDIA_IMG_URL }}images/WHAT-MAKES-FINWIZZ-THE-BEST-LOAN-SERVICE-IN-AHMEDABAD-1.jpg"
+                        alt="Best Loan Service in Ahmedabad">
+                </a>
+
+                <div class="blog-content">
+
+                    <h3>
+                        <a href="#">
+                            What makes Finwizz the best Loan Service in Ahmedabad?
+                        </a>
+                    </h3>
+
+                    <p>
+                        The financial services industry in India has seen rapid growth
+                        with multiple lending opportunities for customers.
+                    </p>
+
+                    <!-- <a href="#" class="read-more-btn">
+                        Read More
+                    </a> -->
+
+                </div>
+
+            </div>
+
+            <!-- BLOG CARD -->
+            <div class="blog-card">
+
+                <a href="#" class="blog-image">
+                    <img src="{{ MEDIA_IMG_URL }}images/Blog_1.png"
+                        alt="Reasons to Go for HDFC Personal Loan">
+                </a>
+
+                <div class="blog-content">
+
+                    <h3>
+                        <a href="#">
+                            Reasons to Go for HDFC Personal Loan
+                        </a>
+                    </h3>
+
+                    <p>
+                        Learn why HDFC Personal Loan is among the preferred choices
+                        when it comes to quick financial assistance.
+                    </p>
+
+                    <!-- <a href="#" class="read-more-btn">
+                        Read More
+                    </a> -->
+
+                </div>
+
+            </div>
+
+            <!-- BLOG CARD -->
+            <div class="blog-card">
+
+                <a href="#" class="blog-image">
+                    <img src="{{ MEDIA_IMG_URL }}images/HOW-TO-GET-A-LOAN-FOR-BUYING-A-COMMERCIAL-PROPERTY-IN-MUMBAI-AND-PUNE.jpg"
+                        alt="Commercial Property Loan">
+                </a>
+
+                <div class="blog-content">
+
+                    <h3>
+                        <a href="#">
+                            How To Get A Loan for Buying A Commercial Property
+                        </a>
+                    </h3>
+
+                    <p>
+                        Banks evaluate your credit score, profession and financial
+                        history before approving property loans.
+                    </p>
+
+                    <!-- <a href="#" class="read-more-btn">
+                        Read More
+                    </a> -->
+
+                </div>
+
+            </div>
+
+            <!-- BLOG CARD -->
+            <div class="blog-card">
+
+                <a href="#" class="blog-image">
+                    <img src="{{ MEDIA_IMG_URL }}images/WHAT-MAKES-FINWIZZ-THE-BEST-LOAN-SERVICE-IN-MUMBAI-1.jpg"
+                        alt="Best Loan Service in Mumbai">
+                </a>
+
+                <div class="blog-content">
+
+                    <h3>
+                        <a href="#">
+                            What Makes Finwizz The Best Loan Service In Mumbai?
+                        </a>
+                    </h3>
+
+                    <p>
+                        The Indian financial sector has evolved significantly and
+                        offers better lending services than ever before.
+                    </p>
+
+                    <!-- <a href="#" class="read-more-btn">
+                        Read More
+                    </a> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/blogs.js"></script>
+{% endblock %}
