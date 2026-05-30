@@ -1,0 +1,398 @@
+{% extends 'base.html' %}
+
+{% block title %}Branch Locator - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/branch-locator.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Branch Locator</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+
+
+<div class="row">
+  <section class="full_width_services">
+    <div class="container">
+      <div class="full_width-loan_title">
+        <p>Branch <span>Locator</span></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="selectCity container">
+  <select id="stateSelect">
+    <option value="">Select State</option>
+    <option value="4">ASSAM</option>
+    <option value="13">CHD</option>
+    <option value="5">CHHATTISGARH</option>
+    <option value="14">DELHI</option>
+    <option value="6">GUJARAT</option>
+    <option value="7">HR</option>
+    <option value="8">JHARKHAND</option>
+    <option value="9">KARANATAKA</option>
+    <option value="10">KERALA</option>
+    <option value="11">MAHARASHTRA</option>
+    <option value="15">MP</option>
+    <option value="17">ODISHA</option>
+    <option value="16">PONDICHERRY</option>
+    <option value="18">PUNJAB</option>
+    <option value="12">RAJASTHAN</option>
+    <option value="19">Tamil Nadu</option>
+    <option value="20">TELANGANA</option>
+    <option value="21">UP</option>
+    <option value="22">WEST BENGAL</option>
+  </select>
+</div>
+
+<div class="branchLocations row">
+  <div class="container location_boxes">
+    
+    <div class="col-sm-4 mapBox" data-termid="22">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59281.251621047944!2d87.708662503469!3d21.777233254561597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0326e5394d8237%3A0x7bb6b4d525857f71!2sContai%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1773913460304!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>CONTAI</h2>
+      <h3>Regd. Office</h3>
+      <p>SHIVANI COMPLEX, 2ND FLOOR, P.S- CONTAI,DIST- PURBA MEDINIPUR721401</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="22">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.636106532298!2d88.42633417436817!3d26.724069868173935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44111836bf377%3A0xb62ce6c5e637e0bd!2sSanat%20Trade%20Centre!5e0!3m2!1sen!2sin!4v1687930721985!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>SILIGURI</h2>
+      <h3>Regd. Office</h3>
+      <p>1ST FLOOR, SANAT TRADE CENTRE, GHOSH NURSERY COMPLEX (NEAR SOUBHAGYA PLACE), SEVOKE ROAD,734001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="22">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.867788678209!2d87.29182957425147!3d23.537257196927737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f773512cae0f7f%3A0x6a966398f055b10f!2sSuhatta%20Mall!5e0!3m2!1sen!2sin!4v1687930541581!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>DURGAPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>4/6 SUHATTA MALL, 4TH FLOOR, CITY CENTRE,713261</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="22">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2270458754947!2d87.31529277421423!3d22.420478638530657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d5b463f150977%3A0xb2ae513d55ea1c55!2sNandi%20Building!5e0!3m2!1sen!2sin!4v1687930365055!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>MEDNIPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>NANDI BUILDING, GROUND FLR, ROON NO. 6, UNDER P.S. KOTWALI, DIST. PASCHIM MEDINIPUR 721101</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="22">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1976741766866!2d88.34467107421919!3d22.571708933005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02772e8c98ba89%3A0xaa33484e74d41249!2sFinwizz%20Financial%20Services%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1687930260745!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>KOLKATA</h2>
+      <h3>Regd. Office</h3>
+      <p>7 HARE STREET, MALLIK HOUSE 1ST FLOOR, NEAR BANKSHALL COURT, NECCO HOUSE 700001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="21">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7022.575976921685!2d79.41724103763374!3d28.350141595360974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a000d463c8da97%3A0x3905639ff9d951ec!2sKrishna%20Janki%20Place%20%2CRampur%20Garden%2C%20Bareilly!5e0!3m2!1sen!2sin!4v1773913882463!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>BAREILLY</h2>
+      <h3>Regd. Office</h3>
+      <p>A-205, KRISHNA JANKI TOWER, RAMPUR GARDEN, NEAR CHURCH, BAREILLY -243001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="21">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.6712393975886!2d78.00144297438686!3d27.19806784777128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974774715bb7965%3A0x6669a6fc9039991!2sMaruti%20Tower%2C%20Bagirati%20Rd%2C%20Sanjay%20Palace%2C%20Sanjay%20Place%2C%20Civil%20Lines%2C%20Agra%2C%20Uttar%20Pradesh%20282002!5e0!3m2!1sen!2sin!4v1687930023995!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>AGRA</h2>
+      <h3>Regd. Office</h3>
+      <p>305, MARUTI TOWER 3RD FLOOR, NEAR AXIS BANK SANJAY PLACE, AGRA-282002</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="21">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13962.675056773112!2d77.73007432799075!3d28.96754754322742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c658b472b0e61%3A0xf61f893baa1eefbe!2sSMFG%20India%20Credit%20Co.%20Ltd.%20-%20Mangal%20Pandey%20Nagar%20(Branch)!5e0!3m2!1sen!2sin!4v1773913947358!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>MEERUT</h2>
+      <h3>Regd. Office</h3>
+      <p>OFFICE -NO.- F-9, FIRST FLOOR SUKHSHANT COMPLEX, MANGAL PANDEY NAGAR, NEAR C.C.S. UNIVERSITY MEERUT-250004</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="21">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.9233558541005!2d80.94712917437276!3d26.84238996311107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd1563b426d7%3A0x95a88eed5a49841b!2sFinwizz%20Financial%20Services%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1687929789076!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>LUCKNOW</h2>
+      <h3>Regd. Office</h3>
+      <p>F-202, 2ND FLOOR, VAISHALI ARCADE, PARK RD, LUCKNOW-226001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="21">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.322044232908!2d80.30431617435852!3d26.477573878657086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c386d0e67820b%3A0xac7e503f6a7a0121!2sBank%20Of%20Baroda!5e0!3m2!1sen!2sin!4v1687929636808!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>KANPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>117/49 A SARVODAYA NAGAR BANK OF BARODA BUILDING BASEMENT, OPPOSITE UPICA, KANPUR-208005</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="20">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.241900483088!2d78.48828917407134!3d17.400175002438797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99c392f515ad%3A0xed8b3d44b6cc53db!2sJwalas%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1687929486540!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>HYDERABAD 2</h2>
+      <h3>Regd. Office</h3>
+      <p>#3-6-750/6, 3RD FLOOR JWALA S DENTAL CLINIC HIMAYATHNAGAR HYDERABAD 500029</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="20">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6193250383335!2d78.44352047407209!3d17.430047101576932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90cc6d45560d%3A0x4fc1e1ad1b0cff57!2sSneha%20Enclave!5e0!3m2!1sen!2sin!4v1687929385542!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>HYDERABAD 1</h2>
+      <h3>Regd. Office</h3>
+      <p>DHARAM SRIVASTAVA, PLOT NO. 66, SNEHA ENCKAVE, DOVELON BAZAR, BESIDE JAAPRIYA APARTMENTS, BOLLARUM, SECUNDERAAD 500010.</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="19">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.236206273856!2d78.11219407393368!3d9.914275274506181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c581bf342461%3A0xa45cd5d8521412e7!2sFriends%20Mahal!5e0!3m2!1sen!2sin!4v1687929284058!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>MADURAI</h2>
+      <h3>Regd. Office</h3>
+      <p>ROOM NO. 113, 1ST FLOOR NO 20, FRIENDS MAHAL, NEAR KODAL ALAGAR PERUMAL KOVIL, MADURAI – 625001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="19">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.654608478325!2d77.82550357397481!3d12.735940820003343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae714629122e89%3A0x5916bf55c5868c7!2sAngel%20Placement%20Services!5e0!3m2!1sen!2sin!4v1687929162636!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>HOSUR</h2>
+      <h3>Regd. Office</h3>
+      <p>2ND FLOOR, ASL PLAZA, ABOVE BALAJI PARADISE HOTEL, OPP HOSUR BUS DEPOT, HOSUR- 635109</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="19">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5795332508305!2d80.24525335!3d13.062414449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526668e85bc875%3A0xee1e69da697a3e2c!2sKAVERI%20COMPLEX%2C%20Nungambakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600034!5e0!3m2!1sen!2sin!4v1687928998845!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>CHENNAI</h2>
+      <h3>Regd. Office</h3>
+      <p>96 CAVERY COMPLEX, 3RD FLOOR, FLAT-301, NUNGAMBAKKAM HIGH ROAD, NEXT TO GANPAT HOTEL 600034</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="12">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114295.43132504648!2d74.50753926249999!3d26.464358999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be7029687d225%3A0x83ebf728bfe84ee2!2sSMFG%20India%20Credit%20Co.%20Ltd.%20-%20Kutchery%20Road%20(Branch)!5e0!3m2!1sen!2sin!4v1773914090917!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>AJMER</h2>
+      <h3>Regd. Office</h3>
+      <p>3RD FLOOR, NEAR SSJ FINANCE, INDIA SQUARE BUILDING, KUTCHERY ROAD, AJMER</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="12">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.989688206432!2d75.84712057430932!3d25.16982603281084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9b2bba8dd67b%3A0x3058a6bc65cb2901!2sClassic%20Computer!5e0!3m2!1sen!2sin!4v1687928451655!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>KOTA 3</h2>
+      <h3>Regd. Office</h3>
+      <p>284, GOPI PLAZA, SHOPPINNG CENTRE KOTA – 324007</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="12">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.0373539782204!2d75.84826257430922!3d25.168216532875988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9b2afcc67317%3A0x8efc038ec7b38259!2sKota%20Computers!5e0!3m2!1sen!2sin!4v1687928277097!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>KOTA 2</h2>
+      <h3>Regd. Office</h3>
+      <p>SHOP NO.1. 2ND FLOOR, ZUBER COMPLEX .NEAR VIJAYA BANK, AERODRUM CIRCLE KOTA,RAJASTHAN-324007</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="12">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28892.003714835442!2d75.82554006585121!3d25.15257396608418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9b2b0b747cfb%3A0xddd4febc0a8d0475!2sAxis%20Bank%20Branch!5e0!3m2!1sen!2sin!4v1773914184701!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>KOTA 1</h2>
+      <h3>Regd. Office</h3>
+      <p>AAYUSHMAN TOWER , 383, SHOPPING CENTER ,OPP.GOPAL TOWER , NR.AXIS BANK , KOTA – 324007</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.821539513829!2d76.85771218148444!3d28.212734113747597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d37850fafb44b%3A0x22f1f8f0a0867967!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>BHIWADI</h2>
+      <h3>Regd. Office</h3>
+      <p>S.NO B 3-4 ASHIYANA ARCED PHOOL BAG , BHIWADI – 301019</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="12">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.618298533751!2d75.80221508116378!3d26.915606516427232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6aa0ad609bd%3A0xa3157ecdb0836f84!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>JAIPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>GROUND FLOOR G- 07 A ,VINOBHA MARG, NR.GEETA ENCLAVE,C SCHEME JAIPUR – 302001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.4508113722122!2d74.23783507501886!3d16.704343484071007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1006a133f2ef1%3A0x1c3e45580a2edb26!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>KOLHAPUR 2</h2>
+      <h3>Regd. Office</h3>
+      <p>PRABHAKAR PLAZA 1ST FLOOR STATION ROAD ABOVE SWEETS KOLHAPUR. – 416001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="18">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.482556222421!2d75.8336374!3d30.901133200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a83b9c8dc61ad%3A0x127242373eb1c146!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>Ludhiana</h2>
+      <h3>Regd. Office</h3>
+      <p>2ND FLOOR FORTUNE CHAMBERS FEROZE GANDHI MARKET LUDHIANA -141001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="17">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7486.205923444643!2d85.8154146!3d20.2545642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a715081827cb%3A0xca13f633a062ac27!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>BHUBNESHWAR</h2>
+      <h3>Regd. Office</h3>
+      <p>A-403, NIRMAL PLAZA, FOREST PARK, NEAR AIRPORT,751009</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="16">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.7599739032294!2d79.81622809999999!3d11.921785400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a536170e206897b%3A0x762cc158c8e8f560!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>PONDICHERRY</h2>
+      <h3>Regd. Office</h3>
+      <p>NO.5, OTHAWADAI STREET, MUDALIARPET, 605004</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="14">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3501.133353841885!2d77.1383292!3d28.6557255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d031359de48e1%3A0x5ce6f19d722cee8e!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>DELHI</h2>
+      <h3>Regd. Office</h3>
+      <p>N-41-42, OLD SCOOTER MARKET BELOW ANYTIME FITNESS, NEAR METRO PILLAR 321, OPP FUN CINEMA, KIRTI NAGAR, NEW DELHI-110015</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="15">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.056822280665!2d75.87977647517911!3d22.72612927938266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd40aca0e103%3A0x520cb85a2d648ac0!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>INDORE</h2>
+      <h3>Regd. Office</h3>
+      <p>223 -224 DM TOWER , JANJIRWALA SQUARE , INDORE 452001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2225828273245!2d77.2961243!3d19.1854782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d69af1bb9fcf%3A0xb281d42903af4a2a!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>NANDED 2</h2>
+      <h3>Regd. Office</h3>
+      <p>WAMAN NAGAR, CHATRAPATI CHOWK, CANAL ROAD, INFRONT OF SURYAVANSHI CLASSESABOVE D S SONY JWELERS , OPPOSITE KM PATIL SCHOOL NANDED – 431601</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.7405657198196!2d72.84008777507748!3d19.119033982094436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d1aa57102f%3A0x8fb0ddaf379f8b13!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>MUMBAI</h2>
+      <h3>Regd. Office</h3>
+      <p>2ND FLOOR, ARJUN BUILDING, PLOT NO 6A, NEAR BOMBAY MERCANTILE BANK LTD., V. P. ROAD, ANDHERI (W)</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1900.7094142121862!2d75.90494485!3d17.677664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5da80bc838a63%3A0x8bafd4d4235eeded!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>SOLAPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>ABHIJIT RATHOD, 205 A, SOUTH KASBA, NEAR SHANI TEMPLE, SOLAPUR -413007.</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.50150561455!2d77.28902207507886!3d19.173285982051436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d680cf97baf1%3A0xacedad7b0427062f!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>NANDED</h2>
+      <h3>Regd. Office</h3>
+      <p>MAHENDRA ATKORE, 1-18-845, PAWDEWADI ROAD, SAMTA NAGAR, MAHAMAYA BUDDH VIHAR, TARODA BK, NANDED, 431605.</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.5754855954115!2d74.23719647501875!3d16.698113484076227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10168a5d38fb7%3A0xc381e0bc5c7c7401!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>KOLHAPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>SUNIL NANGARE, OMKAR PLAZA, -8, BELOW KARNATAKA BANK, NEAR ICICI BANK, BAGAL CHOWK, KOLHAPUR 416008.</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6660527464715!2d79.0796145751331!3d21.165684180518173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0e19ba15a13%3A0x772fb57e12f10e9f!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>NAGPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>AJAY CHHABRIYA, SHOP NO. 181, UPPAR GROUD FLOOR, BAJAJ WING, MAGALWARI BAZAR, SADAR, NAGPUR 440001.</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.269250007068!2d73.77743197510067!3d19.997211181406346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb18149a5971%3A0xc0b913057cac2078!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>NASIK</h2>
+      <h3>Regd. Office</h3>
+      <p>SHAM JADHAV, OFFICE NO 13, GJ BEHIND SAKAL OFFICE, THAKKAR BAZAR, TRIMABK ROAD, NASIK, 422005.</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9046422526967!2d72.52361987423424!3d23.027273216154768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84db493da797%3A0xa54b9589478bb9bd!2sFinwizz%20Financial%20Services%20Private%20Limited!5e0!3m2!1sen!2sin!4v1687931892445!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>PUNE</h2>
+      <h3>Regd. Office</h3>
+      <p>DATTA MUNDE, OFFICE NO. 101 TO 104, FIRST FLOOR, VIKRAM GOLDMINE,OFF.F C ROAD, PUNE 411004.</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.526642141394!2d74.84611717494167!3d12.873821287432625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a49b2d52889%3A0x869fa03a11aaebb7!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>MANGALORE</h2>
+      <h3>Regd. Office</h3>
+      <p>SHOP # 7B, BASEMENT FLOOR, TRADE CENTRE, BUNTS HOSTEL ROAD, MANGALORE – 575003</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.855715777856!2d77.6137159!3d12.981078799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae168f345e828f%3A0xbfe1a991713531ed!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>BANGALORE</h2>
+      <h3>Regd. Office</h3>
+      <p>NANJAPPA COMPLEX, 2ND FLOOR, 21-GANGADHARA CHETTY ROAD, OPP.RBANMS COLLEGE GROUND, ULSOOR 560042</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.272231176539!2d76.96382397491146!3d11.01818998914564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85855c7c74239%3A0x92370493ad01ac1d!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687831556216!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>COIMBATORE</h2>
+      <h3>Regd. Office</h3>
+      <p>343,ROOM # 410, 7TH STREET, PARK ROYAL BLDG, 4TH FLOOR, GANDHIPURAM, COIMBATORE – 641012</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29375.237228707534!2d72.4880593743164!3d23.027272800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84db493da797%3A0xa54b9589478bb9bd!2sFinwizz%20Financial%20Services%20Private%20Limited!5e0!3m2!1sen!2sin!4v1770015721467!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>RAJKOT</h2>
+      <h3>Regd. Office</h3>
+      <p>1003 THE SPIRE, NR SHITALPARK BRTS BUSSTOP, 150FT RING ROAD, RAJKOT-360005</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9166895198696!2d72.37527127425386!3d23.607320594256272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c423328c623df%3A0x95cfab1340bf2d89!2sOrbit%20-%20The%20Business%20Hub!5e0!3m2!1sen!2sin!4v1687932007898!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>MAHESANA</h2>
+      <h3>Regd. Office</h3>
+      <p>308, ORBIT COMPLEX, NR RADHANPUR CROSSROAD,MAHESANA-384002</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9046422526967!2d72.52361987423424!3d23.027273216154768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84db493da797%3A0xa54b9589478bb9bd!2sFinwizz%20Financial%20Services%20Private%20Limited!5e0!3m2!1sen!2sin!4v1687931892445!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>AHMEDABAD</h2>
+      <h3>Regd. Office</h3>
+      <p>502/503/504 VIVAN SQUARE, ABOVE FOREVER 21, JODHPUR CROSS ROAD,AHMEDABD-380015</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.273698975246!2d72.81656937417522!3d21.181283582524507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e6e80ff4849%3A0x5d129766ac92de6c!2sInternational%20Trade%20Center%20Building%2C%20Majura%20Gate%20Rd%2C%20Kailash%20Nagar%2C%20Majura%20Gate%2C%20Surat%2C%20Gujarat%20395001!5e0!3m2!1sen!2sin!4v1687931809130!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>SURAT</h2>
+      <h3>Regd. Office</h3>
+      <p>C-WING, HG-24, INTERNATIONAL TRADE CENTER. MAJURAGATE, SURAT -395001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.3083339449527!2d73.19228497421057!3d22.304175842756973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf59c4875e03%3A0x2ed612ead9de07b0!2sDharmik%20Chamber%2C%20Vinoba%20Bhave%20Rd%2C%20Kasar%20falia%2C%20Jambubet%2C%20Vadodara%2C%20Gujarat%20390001!5e0!3m2!1sen!2sin!4v1687931742606!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>BARODA</h2>
+      <h3>Regd. Office</h3>
+      <p>303DHARMIK CHEMBER,ABOVE AIRTEL OFFICE, KOTHI CHAR RASTA, KOTHI,BARODA -390001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.06365676307!2d75.87866467422424!3d22.725875227337188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd87386667d3%3A0x823f5d00411d0b2c!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1687931594010!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>INDORE 2</h2>
+      <h3>Regd. Office</h3>
+      <p>309, BAPNA ARCADE, 7/1, RACE COURSE ROAD, JANJEERWALA SQURE, INDORE – 452001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.712149059921!2d81.63249257417716!3d21.243260180378826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28ddbd5d35f185%3A0x4464bc2790d0c8a5!2sRavi%20bhavan%20complex!5e0!3m2!1sen!2sin!4v1687931536127!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>RAIPUR</h2>
+      <h3>Regd. Office</h3>
+      <p>BMC FINANCE SOLUTION 419A 4TH FLOOR RAVI BHAVAN RAIPUR (CG) 492001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="13">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.2518000769437!2d76.80590207453581!3d30.711320886668968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fecc3116a25dd%3A0xba588d94acd539d8!2sBerkeley%20Square!5e0!3m2!1sen!2sin!4v1687931382873!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>CHANDIGRAH</h2>
+      <h3>Regd. Office</h3>
+      <p>PLOT NO. 24 2ND FLOOR BERKELEY SQUARE BUILDING INDUSTRIAL AREA PHASE-1 CHANDIGARH-160001</p>
+    </div>
+    
+    <div class="col-sm-4 mapBox" data-termid="4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.868758111019!2d91.76345881502937!3d26.168403383453896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a59771b8e30ad%3A0x3feca24bb8e11730!2sTribeni%20Commercial%20Complex%2C%20Assam%20Trunk%20Rd%2C%20Lachit%20Nagar%2C%20Guwahati%2C%20Assam%20781003!5e0!3m2!1sen!2sin!4v1687931205720!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>GUWAHATI</h2>
+      <h3>Regd. Office</h3>
+      <p>TRIBENI COMMERCIAL COMPLEX, C BLOCK, 3RD FLOOR, ULUBARI, NEAR PEPLE SHOWROOM 781007</p>
+    </div>
+    
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/branch-locator.js"></script>
+{% endblock %}
