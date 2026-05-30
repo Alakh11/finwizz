@@ -1,0 +1,295 @@
+.career-section {
+    padding: 80px 0;
+    background: #f5f7fb;
+}
+
+.career-heading-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.career-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000066;
+}
+
+.career-wrapper {
+    display: flex;
+    gap: 35px;
+}
+
+.career-left {
+    width: 40%;
+}
+
+.career-right {
+    width: 60%;
+    background: #fff;
+    border-radius: 22px;
+    padding: 45px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .06);
+}
+
+.career-card {
+    background: #000066;
+    color: #fff;
+    border-radius: 22px;
+    padding: 45px;
+    height: 100%;
+}
+
+.career-card h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.career-card p {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.career-card a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.career-points {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.career-points li {
+    margin-bottom: 12px;
+    line-height: 28px;
+}
+
+.career-btn {
+    width: 100%;
+    height: 58px;
+    border: none;
+    border-radius: 999px;
+    background: #000066;
+    color: #fff;
+    font-weight: 600;
+}
+
+.career-btn.loading .btn-text {
+    display: none;
+}
+
+.btn-loader {
+    display: none;
+}
+
+.career-btn.loading .btn-loader {
+    display: inline-block;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
+    outline: none;
+    background: #fff;
+}
+
+.form-control:focus {
+    border-color: #000066;
+    box-shadow: 0 0 0 4px rgba(0, 0, 102, 0.08);
+}
+
+select.form-control {
+    appearance: none;
+    cursor: pointer;
+}
+
+.textarea-control {
+    height: 160px;
+    resize: none;
+    padding: 15px;
+}
+
+.file-control {
+    padding: 12px 15px;
+}
+
+.help-block {
+    display: block;
+    color: #e53935;
+    font-size: 13px;
+    margin-top: 7px;
+    min-height: 18px;
+}
+
+.form-group.has-error .form-control {
+    border-color: #e53935;
+}
+
+.form-group.has-error .form-control:focus {
+    box-shadow: 0 0 0 4px rgba(229, 57, 53, 0.08);
+}
+
+.file-upload-wrapper {
+    position: relative;
+}
+
+.file-control {
+    padding-right: 45px;
+}
+
+.file-clear-btn {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    background: #e53935;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 12px;
+    display: none;
+    padding: 0;
+}
+
+.file-clear-btn:hover {
+    background: #c62828;
+}
+
+.selected-file-name {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+    word-break: break-all;
+}
+
+select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23000066' viewBox='0 0 16 16'%3E%3Cpath d='M2 5l6 6 6-6' stroke='%23000066' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 14px;
+
+    padding-right: 45px;
+    cursor: pointer;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    display: block;
+}
+
+input[type="file"]#career_resume {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 8px 45px 8px 10px;
+    font-size: 14px;
+    color: #555;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="file"]#career_resume:focus {
+    border-color: #000066;
+    box-shadow: 0 0 0 4px rgba(0, 0, 102, 0.08);
+}
+
+.form-group.has-error input[type="file"]#career_resume {
+    border-color: #e53935;
+}
+
+input[type="file"]#career_resume::file-selector-button {
+    background: #000066;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 6px 14px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+input[type="file"]#career_resume::file-selector-button:hover {
+    background: #237ee0;
+}
+
+.clear-file-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    background: #e53935;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.clear-file-btn:hover {
+    background: #c62828;
+}
+
+.selected-file-name {
+    display: none;
+}
+
+@media(max-width:991px) {
+
+    .career-left,
+    .career-right {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .career-wrapper {
+        flex-direction: column;
+    }
+
+    .career-section {
+        padding: 20px 0;
+    }
+
+    .career-card,
+    .career-right {
+        padding: 30px;
+    }
+
+}

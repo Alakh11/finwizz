@@ -27,6 +27,48 @@ body {
 footer hr.border-secondary {
     border-color: #333 !important;
 }
+
+
+/* FORM */
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #000066;
+    box-shadow: 0 0 0 4px rgba(0, 0, 102, 0.08);
+}
+
+.help-block {
+    display: block;
+    color: #e53935;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.form-group.has-error .form-control {
+    border-color: #e53935;
+}
+
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1220px;
