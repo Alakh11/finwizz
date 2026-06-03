@@ -1,0 +1,408 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Loan - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/personal-loan.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home Loan</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="personal-loan-section">
+    <div class="container">
+
+        <div class="loan-header">
+
+            <div class="loan-title-box">
+                <h2>HOME</h2>
+                <span>LOAN</span>
+            </div>
+
+            <div class="loan-content">
+
+                <p>
+                    Home is where the heart is. Owning one’s own place under the sun is the most
+                    popular thing on everyone’s bucket list. Finding the right home loan is crucial
+                    to make your investments worthy of the home you have dreamt of all your life.
+                    As much as the experience of buying one’s own home is exciting, the overwhelming
+                    finance sometimes dampens the experience. But as long as you have access to the
+                    best possible home loan, your dream home isn’t that far.
+                </p>
+
+                <p>
+                    Home Loan is a loan provided by a bank or a financial institution for the purchase
+                    of a residential property. The loan can be used to purchase a new/ resale house,
+                    construct a house or to buy an under-construction house from a builder. The same
+                    property will serve as a security.
+                </p>
+
+                <p>
+                    Home loan also helps in wealth creation in the long term. A property is proven to
+                    be an appreciating asset since the price of the house is expected to rise over a
+                    period of time. This makes financing of such a purchase by borrowing a smart method
+                    to own and create an asset without having all the funds at the moment.
+                </p>
+
+                <img src="{{ MEDIA_IMG_URL }}images/HOME-LOAN.jpg"
+                    srcset="{{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/HOME-LOAN.jpg 766w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/HOME-LOAN-300x157.jpg 300w"
+                    sizes="(max-width: 766px) 100vw, 766px" alt="Home Loan" class="loan-banner" decoding="async"
+                    fetchpriority="high">
+            </div>
+
+        </div>
+
+        <div class="loan-features">
+
+            <h3>Significance of Home Loan</h3>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Relieves the pressure of high property prices, making home ownership achievable.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Secured in nature, offering significantly higher tenures compared to other loans.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Offers a very low rate of interest vis-à-vis other unsecured loan products.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Tax savings up to Rs. 1,50,000 on interest outflow against your salary/business income.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Principal deduction up to Rs. 1,00,000 available under Section 80C of the Income Tax Act.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Long repayment periods fit the monthly EMI outgoing comfortably within your income.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documents Section -->
+        <div class="documents-section">
+
+            <h3>Documents required:</h3>
+
+            <div class="document-category">
+                <h4 style="text-align: center; color: #000066; font-size: 24px; font-weight: 700; margin-bottom: 30px;">
+                    For Self Employed Professionals</h4>
+
+                <div class="document-grid">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Property Papers">
+                        <h4>Property Papers</h4>
+                        <p>Copy of Property Papers</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/kyc.svg" alt="KYC Icon">
+                        <h4>KYC</h4>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Residence Icon">
+                        <h4>Residence Proof</h4>
+                        <p>Current Residence Proof</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/3-Months-Salary-Slip.svg" alt="Salary Slip">
+                        <h4>Salary Slip</h4>
+                        <p>3 Months’ Salary Slip</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg"
+                            alt="Bank Statement Icon">
+                        <h4>Bank Statement</h4>
+                        <p>For last 6 Months</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/2-Years-Form-16.svg" alt="Form 16 Icon">
+                        <h4>Form 16</h4>
+                        <p>Form 16 for 2 Years</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-category" style="margin-top: 60px;">
+                <h4 style="text-align: center; color: #000066; font-size: 24px; font-weight: 700; margin-bottom: 30px;">
+                    For Salaried Professionals</h4>
+
+                <div class="document-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/BANKING-24.svg" alt="Property Papers">
+                        <h4>Property Papers</h4>
+                        <p>Copy of Property Papers</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/KYC-PAN-Card-and-Aadhar-Card.svg" alt="KYC Icon">
+                        <h4>KYC</h4>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Business Address">
+                        <h4>Business Address</h4>
+                        <p>Business Address Proof</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Income-proof.svg" alt="Income Proof">
+                        <h4>Income Tax Returns</h4>
+                        <p>ITR of last 3 Years</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg" alt="Bank Statement">
+                        <h4>Bank Statement</h4>
+                        <p>Statement of last 12 Months</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3>FAQs on Home Loan</h3>
+
+            <div class="faq-item active">
+                <div class="faq-title">
+                    WHO IS ELIGIBLE FOR HOME LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Anyone who has a stable source of income is eligible to apply for a home loan. The income can be
+                        salary income, business income, rental income, etc.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IS THE MAXIMUM AMOUNT ONE CAN GET AS A HOME LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Loan eligibility is calculated on the basis of your income and valuation of property.
+                        Banks/Financial institutions take into account your repayment capacity. Generally, loans are
+                        given to the extent of 75-85% of the property valuation, depending on the loan amount applied
+                        and the final sanction is subject to the repayment capacity.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN I ALSO INCLUDE MY SPOUSE’S INCOME WHEN CALCULATING MY LOAN ELIGIBILITY?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, your spouse’s income does come under the umbrella and shall also be included while
+                        calculating your loan eligibility. Also, you can club your parents’ income or brother’s income
+                        for loan enhancement. In case of self employed applicants’, partner’s income may also be clubbed
+                        for loan enhancement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN I GET A HOME LOAN ON THE PROPERTY WHICH I ALREADY OWN SINCE MANY YEARS?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>No, you cannot get a home loan on a property which is already owned by you. However, if you have
+                        purchased a property and within 6 months itself, you want to avail a home loan, the same
+                        property would be considered by the bank. Post 6 months, you would only be eligible for a loan
+                        against the property, and the interest rates for this loan are generally higher than that on a
+                        home loan and also, the tenor of such loans are shorter. Moreover, you will not be able to avail
+                        income tax benefits on it like you can on a home loan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN I AVAIL HOME LOANS FROM DIFFERENT BANKS ON THE SAME PROPERTY?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, you can avail home loans from different banks (only for sanction purpose). However, the
+                        property can be mortgaged to only one bank and hence, you need to finalize one bank for
+                        completion of formalities.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    AM I ELIGIBLE FOR MORE THAN ONE HOME LOAN AGAINST DIFFERENT PROPERTIES?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, you can avail multiple home loans on different properties. The banks are primarily
+                        interested in the repayment capacity of a person. If they have assurance and are comfortable
+                        with it, you will not face any problem getting home loans for different properties at a time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    I HAVE A PIECE OF LAND. CAN I GET A LOAN FOR CONSTRUCTING A HOUSE ON THAT LAND?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, if the land comes under non-agricultural usage category, then you certainly can get a home
+                        loan for residential construction purpose. As a pre-requisite, you need to provide an
+                        architect’s estimate for the construction plan. Tax benefits for such loans starts only after
+                        completion of the house.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN A NON-RESIDENT INDIAN (NRI) AVAIL A HOME LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, non-resident Indians can avail a special NRI home loan to buy a property in India. However,
+                        it is at the discretion of the bank to sanction such loans. Most of the banks fund NRIs for a
+                        shorter tenor and charge a higher interest.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    HOW DO I ENSURE THE PROPERTY HAS A CLEAR TITLE?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Many banks have their panel lawyers to conduct title search for properties. Banks sanction loan
+                        only after they receive a report that there are no encumbrances and that the property has a
+                        clear and marketable title. In many cases, builders get their projects pre-approved by banks.
+                        These lenders thoroughly examine the legal documents of the title associated to that project,
+                        the stage of construction, and the builder’s track record to complete a project in time. The
+                        time taken to sanction loans from approved projects are comparatively lower.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT DOES PRE-EMI MEAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Many a times, a borrower will opt for an under construction property and hence, the bank shall
+                        make disbursements in parts, depending on the progress in construction. However, up until the
+                        full loan is disbursed, you pay a simple interest at the rate you already agreed upon with the
+                        lender. This is known as Pre-EMI. Once the full disbursement is made, you start paying your
+                        actual EMI from the next month.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IS THE DIFFERENCE BETWEEN A FIXED RATE AND FLOATING RATE HOME LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>In fixed rate home loan, the interest rate remains the same throughout the tenor of your home
+                        loan. In floating rate home loan, the interest rate charged by a lender keeps changing with
+                        respect to the movements in Prime Lending Rates (PLRs) of the bank. Whenever there is a hike in
+                        the PLR, floating rate customers’ EMI would go up. Alternatively, the tenor of the loan goes up.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT ARE THE TAX BENEFITS THAT I CAN AVAIL BY REPAYING A HOME LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>You will be eligible to claim tax benefits on both the interest and principal components of your
+                        repayment during that financial year. Under Section 24, you can claim up to Rs. 2,00,000 or the
+                        actual interest repaid, whichever is lower. Note that you can claim this interest only when you
+                        are in complete possession of the house.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN I GET TAX REBATES ON TWO HOUSING LOANS ON TWO DIFFERENT PROPERTIES?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, you can get tax benefits under Section 80C and Section 24 on both housing loans. However,
+                        the total amount on which you can get tax benefits will be Rs. 1,50,000 and Rs. 2,00,000
+                        respectively, across both loans.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WILL THE EMI AMOUNT OR THE TENOR OF THE LOAN CHANGE DURING THE LOAN PERIOD?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, the EMI amount or the tenor of the loan could get altered if one has availed a floating rate
+                        of interest.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    DO I NEED TO GET PROPERTY INSURANCE WHILE AVAILING A HOME LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>No, it is not mandatory to buy property insurance when you are availing a home loan. But it is in
+                        the interest of the borrower to insure property as it shall eliminate the risk of loss of
+                        property.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN I SELL THE HOUSE EVEN WHEN THE HOME LOAN IS NOT PAID OFF?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, you can sell the house even when the home loan is active. However, you need to inform the
+                        lender and get a consent from them to sell. The title deeds shall be released to the borrower
+                        only when all the dues to the bank are fully paid off.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/services/personal-loan.js"></script>
+{% endblock %}
