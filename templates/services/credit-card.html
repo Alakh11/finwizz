@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+{% block title %}Credit Card - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/personal-loan.css" rel="stylesheet" type="text/css" />
+<link href="{{ MEDIA_BLOG_URL }}css/services/credit-card.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Credit Card</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="personal-loan-section credit-card-section">
+    <div class="container">
+
+        <div class="loan-header">
+
+            <div class="loan-title-box">
+                <h2>CREDIT</h2>
+                <span>CARD</span>
+            </div>
+
+            <div class="loan-content">
+                <p>
+                    Credit cards are life savers in today’s world of speedy and spontaneous transactions.
+                    They help you enjoy rewarding experiences without having to spend a large amount from
+                    your pocket immediately. Whether it's shopping, travel, dining, entertainment, or
+                    emergency expenses, a credit card provides instant purchasing power and financial
+                    flexibility.
+                </p>
+
+                <p>
+                    During medical emergencies or urgent financial requirements, credit cards can act as
+                    a quick source of short-term credit. Most banks and financial institutions offer
+                    specialized credit cards designed for different lifestyles and spending habits.
+                </p>
+
+                <p>
+                    Frequent travelers can benefit from premium travel cards that offer airport lounge
+                    access, flight discounts, reward points, travel insurance, and other exclusive
+                    privileges. Similarly, online shoppers can enjoy cashback offers, discounts,
+                    reward points, and special deals across major e-commerce platforms.
+                </p>
+
+                <p>
+                    At Finwizz, we help you choose the most suitable credit card from multiple lenders
+                    based on your spending habits and financial goals. Responsible usage within the
+                    assigned credit limit also helps build a strong credit history, increasing your
+                    eligibility for future loans such as Home Loans, Car Loans, and Personal Loans.
+                </p>
+
+                <img 
+                    src="{{ MEDIA_IMG_URL }}images/CREDIT-CARD.jpg"
+                    alt="Credit Card"
+                    class="loan-banner"
+                    decoding="async" 
+                    fetchpriority="high"
+                >
+            </div>
+
+        </div>
+
+        <!-- <div class="loan-features">
+            <h3>Benefits of Credit Cards:</h3>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Instant access to credit whenever required.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Reward points on everyday spending.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Cashback offers on shopping and online purchases.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Travel benefits including lounge access and discounts.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Emergency financial assistance when needed.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Helps build and improve your credit score.</p>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="documents-section">
+            <h3>Documents required:</h3>
+
+            <div class="document-grid">
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/KYC-PAN-Card-and-Aadhar-Card.svg" alt="KYC Icon">
+                    <h4>KYC Documents</h4>
+                    <p>PAN Card &amp; Aadhar Card</p>
+                </div>
+
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/3-Months-Salary-Slip.svg" alt="Salary Icon">
+                    <h4>Salary Proof</h4>
+                    <p>Last 3 Months Salary Slips</p>
+                </div>
+
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg" alt="Bank Statement Icon">
+                    <h4>Bank / Card Statement</h4>
+                    <p>Last 6 Months Statement</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="faq-section">
+            <h3>FAQS ON CREDIT CARDS</h3>
+
+            <div class="faq-item active">
+                <div class="faq-title">
+                    WHAT IS A CREDIT CARD?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>A credit card is a payment instrument issued by banks that allows cardholders to make purchases and repay the amount later within a specified billing cycle.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    HOW DOES A CREDIT CARD HELP BUILD CREDIT HISTORY?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Timely payment of credit card bills demonstrates responsible credit behavior and helps improve your overall credit score over time.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN I USE MY CREDIT CARD FOR ONLINE SHOPPING?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes. Credit cards are widely accepted for online purchases and often provide exclusive discounts, cashback offers, and reward points on e-commerce sites.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT HAPPENS IF I MISS A PAYMENT?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Missing payments can result in late payment charges, higher interest rates on outstanding balances, and a negative impact on your credit score.</p>
+                </div>
+            </div>
+
+        </div> -->
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/services/personal-loan.js"></script>
+{% endblock %}

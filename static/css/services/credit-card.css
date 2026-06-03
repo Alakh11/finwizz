@@ -1,0 +1,28 @@
+.credit-card-section .loan-banner {
+    margin-top: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+}
+
+.credit-card-section .feature-item {
+    min-height: 95px;
+}
+
+.credit-card-section .document-card {
+    min-height: 220px;
+}
+
+@media(min-width: 992px) {
+    .credit-card-section .document-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .credit-card-section .feature-item,
+    .credit-card-section .document-card {
+        min-height: auto;
+    }
+}
