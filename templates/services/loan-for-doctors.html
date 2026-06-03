@@ -1,0 +1,254 @@
+{% extends 'base.html' %}
+
+{% block title %}Loan For Doctors - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/personal-loan.css" rel="stylesheet" type="text/css" />
+<link href="{{ MEDIA_BLOG_URL }}css/services/loan-for-doctors.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Services</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Loan For Doctors</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="personal-loan-section doctors-loan-section">
+  <div class="container">
+
+    <div class="loan-header">
+
+      <div class="loan-title-box">
+        <h2>LOAN</h2>
+        <span>FOR DOCTORS</span>
+      </div>
+
+      <div class="loan-content">
+
+        <p>
+          The life savers deserve the best! Loan for Doctors ensures that along with
+          appreciation for the work they diligently do every single day, we strive to give
+          them confidence to put their best foot forward in the toughest humanitarian job.
+          After all, it is a privilege to save lives but heart-wrenching when you lose one.
+        </p>
+
+        <p>
+          And therefore, to commemorate these fighters, unsecured loans for Doctors have no
+          end-use restrictions, require no collateral, and come with longer tenures, making
+          it the perfect solution to meet financial goals stress-free.
+        </p>
+
+        <p>
+          If you are a doctor looking for a Personal Loan, we have a range of easy loans
+          designed and catered especially for individual doctors &amp; medical practitioners
+          at the best rates with quick approvals and disbursements.
+        </p>
+
+        <img src="{{ MEDIA_IMG_URL }}images/LOAN-FOR-DOCTORS.jpg" alt="Loan for Doctors" class="loan-banner"
+          decoding="async" fetchpriority="high">
+      </div>
+
+    </div>
+
+    <!-- Features/Uses Section -->
+    <div class="loan-features">
+
+      <h3>Loan for doctors can be availed for:</h3>
+
+      <div class="features-grid">
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Any personal purpose including objectives for meeting expenses of professional requirement.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Development of clinic / clinic-cum-residence, nursing home, pathological laboratory.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Purchase of medical / diagnostic equipment, setting up of operation theatre, etc.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Purchase of office equipment viz. computers, air-conditioners and furniture, etc.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Expansion / renovation / modernization of existing premises / clinic / nursing home.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Working capital requirement including stock of medicines.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Key Benefits -->
+    <div class="documents-section">
+
+      <h3>Why Choose Doctor Loans?</h3>
+
+      <div class="document-grid">
+
+        <div class="document-card">
+          <h4>No Collateral</h4>
+          <p>Unsecured loan facility with no property mortgage requirement.</p>
+        </div>
+
+        <div class="document-card">
+          <h4>Higher Eligibility</h4>
+          <p>Special loan programs designed specifically for medical professionals.</p>
+        </div>
+
+        <div class="document-card">
+          <h4>Quick Approval</h4>
+          <p>Fast processing and quick disbursal timelines.</p>
+        </div>
+
+        <div class="document-card">
+          <h4>Flexible Usage</h4>
+          <p>No restrictions on the utilization of loan proceeds.</p>
+        </div>
+
+        <div class="document-card">
+          <h4>Competitive Rates</h4>
+          <p>Attractive interest rates for doctors and healthcare practitioners.</p>
+        </div>
+
+        <div class="document-card">
+          <h4>Long Tenure</h4>
+          <p>Comfortable repayment options with longer loan tenure.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Documents Required -->
+    <div class="documents-section">
+
+      <h3>Documents Required</h3>
+
+      <div class="document-grid">
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/kyc.svg" alt="KYC Icon">
+          <h4>KYC Documents</h4>
+          <p>PAN Card, Aadhaar Card and Address Proof.</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Income-proof.svg" alt="Income Icon">
+          <h4>Income Proof</h4>
+          <p>Income Tax Returns of the last 2–3 years.</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg" alt="Bank Statement Icon">
+          <h4>Bank Statements</h4>
+          <p>Latest 6–12 months bank statements.</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Qualification-proof.svg" alt="Qualification Icon">
+          <h4>Qualification Proof</h4>
+          <p>Medical degree certificates and registration documents.</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Clinic Proof Icon">
+          <h4>Clinic Proof</h4>
+          <p>Clinic ownership, rent agreement or address proof.</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/salary.svg" alt="Professional Proof Icon">
+          <h4>Professional Proof</h4>
+          <p>Practice establishment and professional credentials.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section">
+
+      <h3>Frequently Asked Questions</h3>
+
+      <div class="faq-item active">
+        <div class="faq-title">
+          WHO CAN APPLY FOR A DOCTOR LOAN?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Doctors, dentists, surgeons, specialists and registered medical practitioners can apply.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          IS COLLATERAL REQUIRED?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>No. Most doctor loans are unsecured and do not require collateral.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I USE THE LOAN TO EXPAND MY CLINIC?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Yes. Clinic expansion, renovation and modernization are common purposes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I PURCHASE MEDICAL EQUIPMENT?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Yes. Diagnostic machines, medical devices and healthcare infrastructure can be financed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          WHAT IS THE REPAYMENT TENURE?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Repayment tenure varies by lender and can extend up to several years.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<!-- Reusing the unified JS -->
+<script src="{{ MEDIA_BLOG_URL }}js/services/personal-loan.js"></script>
+{% endblock %}

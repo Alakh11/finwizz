@@ -1,0 +1,44 @@
+.doctors-loan-section .loan-content {
+    max-width: 1050px;
+}
+
+.doctors-loan-section .loan-banner {
+    margin-top: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+}
+
+.doctors-loan-section .faq-title {
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+.doctors-loan-section .feature-item {
+    min-height: 100px;
+}
+
+.doctors-loan-section .document-card {
+    min-height: 240px;
+}
+
+.doctors-loan-section .documents-section:nth-of-type(3) .document-card {
+    min-height: auto;
+    padding: 40px 30px;
+}
+
+.doctors-loan-section .documents-section:nth-of-type(3) .document-card h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+@media(max-width: 767px) {
+
+    .doctors-loan-section .feature-item,
+    .doctors-loan-section .document-card {
+        min-height: auto;
+    }
+
+    .doctors-loan-section .documents-section:nth-of-type(3) .document-card {
+        padding: 25px 20px;
+    }
+}
