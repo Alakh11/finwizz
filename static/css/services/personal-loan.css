@@ -39,13 +39,17 @@
 }
 
 .loan-content p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 32px;
-    color: #444;
+    color: #333333;
     margin-bottom: 20px;
     text-align: justify;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
 }
-
 .loan-banner {
     width: 100%;
     max-width: 1000px;

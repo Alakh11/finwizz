@@ -39,11 +39,16 @@
 }
 
 .loan-content p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 32px;
-    color: #444;
+    color: #333333;
     margin-bottom: 20px;
     text-align: justify;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
 }
 
 .loan-banner {
@@ -99,7 +104,7 @@
 
 .document-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 }
 
 .document-card img {
@@ -211,6 +216,7 @@
 }
 
 @media(max-width: 480px) {
+
     .loan-title-box h2,
     .loan-title-box span {
         font-size: 32px;
@@ -269,7 +275,7 @@
     .document-card p {
         font-size: 13px;
     }
-    
+
     .faq-title {
         font-size: 13px;
         padding: 12px;
