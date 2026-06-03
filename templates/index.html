@@ -1,0 +1,307 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/index.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item active"><a href="{% url 'home' %}" aria-current="page">Home</a></li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="hero-section">
+    <div class="hero-slider">
+        <div class="hero-slide">
+            <img src="{{ MEDIA_IMG_URL }}images/home-banner.png" alt="Hero Banner">
+
+            <div class="hero-content">
+                <h1>
+                    <span>We</span> put a full stop
+                    <br>
+                    to your financial worries
+                </h1>
+
+                <a href="{% url 'apply_loans' %}" class="hero-btn">
+                    Apply for <strong>Quick Loan</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="about-grid">
+
+            <div class="about-content">
+                <h2>About Us</h2>
+
+                <p>
+                    Finwizz is the partner to top Premier Institutions serving you
+                    with the best possible deals from the basket of loans we provide. 
+                    The expertise we have reaped through almost two decade long experience 
+                    in the business enables us to identify the most appropriate loan as per your needs.
+                </p>
+
+                <p>
+                    We are accountable for our actions and transparent in our process. 
+                    Your trust is our biggest asset - Something you can bank on!
+                </p>
+
+                <p>
+                    Finwizz walks along with you in your striving journey to live your 
+                    best possible life. As you embark upon this, we fortify and reassure 
+                    all possibilities of turning every dream of yours into reality.
+                </p>
+
+                <a href="{% url 'about_us' %}" class="about-btn">
+                    Read More
+                </a>
+            </div>
+
+            <div class="about-image">
+                <img src="{{ MEDIA_IMG_URL }}images/about-bg.png" alt="About Finwizz">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="partners-section">
+    <div class="container">
+
+        <div class="section-title text-center">
+            <h2>
+                ‘<strong>Partnered</strong> with the <strong>best.</strong> To <strong>serve</strong> you the <strong>best</strong>.’
+            </h2>
+        </div>
+
+        <div class="partner-slider">
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/36.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/37.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/38.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/1.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/14.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/9.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/26.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/20.jpg" alt="Partner"></div>
+            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/32.jpg" alt="Partner"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="process-section">
+    <div class="container">
+
+        <div class="process-grid">
+
+            <div class="process-video">
+                <video autoplay muted loop playsinline>
+                    <source src="{{ MEDIA_IMG_URL }}videos/Website.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="process-content">
+                <h2>The Finwizz Process – <strong>How It Works</strong></h2>
+
+                <div class="accordion">
+
+                    <div class="accordion-item active">
+                        <div class="accordion-title">
+                            <i class="fas fa-edit"></i> Apply
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content" style="display: block;">
+                            At this stage, you will need to fill in your details on the ‘Apply Now’ page and we will get in touch with you at the earliest.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <i class="fas fa-check-circle"></i> Eligibility Check
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            Our experts will analyze your loan requirement over the phone. We will need the below information to recommend the most suitable loan product with the lowest interest rate:<br><br>
+                            a. Mode of employment, years of work experience, Company you work for.<br>
+                            b. Your current income.<br>
+                            c. City of Employment &amp; Current obligations (Any existing EMI’s being paid, credit card outstanding).
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <i class="fas fa-folder-open"></i> Document Collection
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            The photocopies of the following documents will be picked up at your doorstep by our team.<br><br>
+                            a. KYC documents (ID &amp; Residence proof)<br>
+                            b. Income documents
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <i class="fas fa-cogs"></i> Loan Processing
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            We will help you process the loan application with the bank and comply with bank formalities.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <i class="fas fa-thumbs-up"></i> Loan Approval
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            The bank will approve your loan application post submission and verification of your documents.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <i class="fas fa-hand-holding-usd"></i> Disbursement
+                            <span>+</span>
+                        </div>
+                        <div class="accordion-content">
+                            Amount will be credited to your bank account after submission of post-sanction documents.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="stats-section" style="background: url('{{ MEDIA_IMG_URL }}images/funfact-bg-3.jpg') no-repeat center center; background-size: cover; position: relative;">
+    <div class="advisor-overlay"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+
+        <div class="text-center mb-5">
+            <h2 style="color: #000;">Let the numbers talk</h2>
+            <p style="color: #000; max-width: 800px; margin: 0 auto; font-size: 16px;">
+                Propelled by this sheer passion for making loans accessible to everyone, Finwizz has made Lakhs of dreams possible with the privilege of need-based loans.
+            </p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3 style="color: #000066;"><span class="counter" data-count="3">0</span></h3>
+                <span style="color: #000; font-weight: 600;">Employees</span>
+            </div>
+
+            <div class="stat-box">
+                <h3 style="color: #000066;"><span class="counter" data-count="60">0</span></h3>
+                <span style="color: #000; font-weight: 600;">Locations</span>
+            </div>
+
+            <div class="stat-box">
+                <h3 style="color: #000066;"><span class="counter" data-count="100">0</span></h3>
+                <span style="color: #000; font-weight: 600;">% Satisfaction</span>
+            </div>
+
+            <div class="stat-box">
+                <h3 style="color: #000066;"><span class="counter" data-count="2">0</span></h3>
+                <span style="color: #000; font-weight: 600;">Happy Customers</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="testimonial-section">
+    <div class="container">
+
+        <div class="section-title light text-center mb-5">
+            <div class="heading_border"></div>
+            <h2>Words from happy customers</h2>
+        </div>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial-card">
+                <img src="{{ MEDIA_IMG_URL }}images/t5.png" alt="Darshan P">
+                <div class="stars">★★★★★</div>
+                <p>
+                    I received a good service provided by Finwizz. The documentation and other process was very easy and fast. I will surely recommend Finwizz to my friends.
+                </p>
+                <h4>Darshan P, Mysore</h4>
+                <span>Software Engineer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="{{ MEDIA_IMG_URL }}images/t2.png" alt="Madhu B S">
+                <div class="stars">★★★★★</div>
+                <p>
+                    I got my personal loan at less rate of interest. Thanks for quick and fast service.
+                </p>
+                <h4>Madhu B S, Bangalore</h4>
+                <span>Senior Structural Design Engineer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="{{ MEDIA_IMG_URL }}images/t1.png" alt="Virali Shah">
+                <div class="stars">★★★★★</div>
+                <p>
+                    My experience of availing a homeloan and car loan via Finwizz was fantastic. There was a regular follow up from Finwizz team. They keep updating me once a day on my loan status.
+                </p>
+                <h4>Virali Shah, Mumbai</h4>
+                <span>Customer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="{{ MEDIA_IMG_URL }}images/t6.png" alt="Pradeep Gowda">
+                <div class="stars">★★★★★</div>
+                <p>
+                    Finwizz provided good service to get my personal loan. The team guided me with all the details regarding rate of interest. I am very happy with the service.
+                </p>
+                <h4>Pradeep Gowda, Bangalore</h4>
+                <span>Business Development Manager</span>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="{{ MEDIA_IMG_URL }}images/t3.png" alt="Syed Abdur Rahaman">
+                <div class="stars">★★★★★</div>
+                <p>
+                    I have no words to express my deepest gratitude for all the guidance and support given by you and the team of Finwizz.
+                </p>
+                <h4>Syed Abdur Rahaman, Pune</h4>
+                <span>Senior Software Developer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="{{ MEDIA_IMG_URL }}images/t4.png" alt="Joyce Almeida">
+                <div class="stars">★★★★★</div>
+                <p>
+                    I was going pillar to post to get my personal loan on an emergency need. Finwizz team came as a treasure, as they processed my loan with variety of options in a short while.
+                </p>
+                <h4>Joyce Almeida</h4>
+                <span>CEO</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/home.js"></script>
+{% endblock %}

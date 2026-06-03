@@ -1,0 +1,545 @@
+/* ==========================================================================
+   Finwizz Home Page Styles (Responsive down to 300px)
+   ========================================================================== */
+
+/* 1. Global & Utility Classes */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 90px 0;
+    position: relative;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: #000066;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-title h2 span {
+    color: #237ee0;
+}
+
+/* 2. Hero Section */
+.hero-section {
+    padding: 0;
+    position: relative;
+    background: #f8f9fa; /* Fallback */
+}
+
+.hero-slide {
+    position: relative;
+    width: 100%;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    color: #000066;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #237ee0;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #000066;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid #000066;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn strong {
+    font-weight: 700;
+}
+
+.hero-btn:hover {
+    color: #237ee0;
+    border-color: #237ee0;
+}
+
+/* 3. About Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-content h2 {
+    color: #000066;
+    font-size: 38px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.about-btn {
+    display: inline-block;
+    background: #fff;
+    color: #000066;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #000066;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.about-btn:hover {
+    background: #000066;
+    color: #fff;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* 4. Partners Section */
+.partners-section {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.partner-item {
+    padding: 15px;
+    outline: none;
+}
+
+.partner-item img {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.partner-item img:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+/* 5. Process Section (How It Works) */
+.process-section {
+    background: #f4f6f9;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.process-video video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.process-content h2 {
+    color: #000066;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.process-content h2 strong {
+    font-weight: 800;
+}
+
+/* Pill-shaped Accordion */
+.accordion-item {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.accordion-title {
+    padding: 15px 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #000066;
+    font-size: 15px;
+}
+
+.accordion-title i {
+    margin-right: 12px;
+    color: #237ee0;
+    font-size: 18px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 25px 20px 45px;
+    color: #555;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.accordion-item.active {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-color: #e0e6ed;
+    border-radius: 25px; /* Slightly less rounded when open to fit text neatly */
+}
+
+/* 6. Stats Section (Let the numbers talk) */
+.stats-section {
+    padding: 100px 0;
+    background-attachment: fixed !important;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.stat-box {
+    text-align: center;
+    position: relative;
+}
+
+/* Faux divider lines between stats on desktop */
+.stat-box:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background: rgba(0,0,0,0.1);
+}
+
+.stat-box h3 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.stat-box span {
+    font-size: 16px;
+}
+
+/* 7. Testimonials Section */
+.testimonial-section {
+    background: #000066;
+    padding: 100px 0;
+}
+
+.testimonial-section .heading_border {
+    width: 60px;
+    height: 3px;
+    background: #ffb400;
+    margin: 0 auto 20px;
+}
+
+.testimonial-section .light h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Overlapping Avatar Cards */
+.testimonial-slider {
+    margin-top: 80px; /* Space for avatars to pop out */
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 50px 30px 30px;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.testimonial-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: -45px; /* Pops out of the top */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #f4f6f9;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+.stars {
+    color: #ffb400;
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.testimonial-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-style: italic;
+    flex-grow: 1; /* Pushes the name to the bottom */
+}
+
+.testimonial-card h4 {
+    color: #000066;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.testimonial-card span {
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1199px) */
+@media (max-width: 1199px) {
+    .hero-content h1 {
+        font-size: 46px;
+    }
+    .about-content h2,
+    .process-content h2,
+    .section-title h2 {
+        font-size: 32px;
+    }
+}
+
+/* Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+    section {
+        padding: 70px 0;
+    }
+    
+    .hero-slide img {
+        height: 550px;
+        object-position: 70% center;
+    }
+
+    .hero-content {
+        left: 5%;
+    }
+
+    .about-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .process-grid {
+        /* Reverse order so Video shows up below Accordion on mobile */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    /* Adjust dividers for 2-column layout */
+    .stat-box:nth-child(2)::after,
+    .stat-box:nth-child(4)::after {
+        display: none;
+    }
+}
+
+/* Large Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+    .hero-slide img {
+        height: 500px;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        background: rgba(255,255,255,0.85); /* Readability pane for mobile */
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .section-title h2,
+    .about-content h2,
+    .process-content h2 {
+        font-size: 28px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr; /* Stack stats completely */
+        gap: 35px;
+    }
+
+    /* Remove all dividers on mobile */
+    .stat-box::after {
+        display: none;
+    }
+
+    .stat-box h3 {
+        font-size: 45px;
+    }
+
+    .testimonial-slider {
+        margin-top: 60px;
+    }
+    
+    .testimonial-card {
+        padding: 40px 20px 20px;
+    }
+    
+    .testimonial-card img {
+        width: 75px;
+        height: 75px;
+        top: -37.5px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    section {
+        padding: 50px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-btn {
+        font-size: 16px;
+    }
+
+    .section-title h2,
+    .about-content h2,
+    .process-content h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .testimonial-section .light h2 {
+        font-size: 24px;
+    }
+
+    .accordion-title {
+        font-size: 14px;
+        padding: 15px;
+    }
+    
+    .accordion-content {
+        font-size: 13px;
+        padding: 0 15px 15px 40px;
+    }
+
+    .about-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Mobile (Down to 300px) */
+@media (max-width: 350px) {
+    .hero-slide img {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .section-title h2,
+    .about-content h2,
+    .process-content h2 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .stat-box h3 {
+        font-size: 38px;
+    }
+
+    .testimonial-section .light h2 {
+        font-size: 20px;
+    }
+
+    .testimonial-card {
+        margin: 10px 5px;
+        padding: 35px 15px 20px;
+    }
+
+    .testimonial-card p {
+        font-size: 13px;
+    }
+}
