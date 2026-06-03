@@ -1,0 +1,27 @@
+.lap-section .loan-content {
+    max-width: 1050px;
+}
+
+.lap-section .loan-banner {
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+}
+
+.lap-section .feature-item {
+    min-height: 95px;
+}
+
+.lap-section .document-card {
+    min-height: 240px;
+}
+
+.lap-section .document-card p {
+    line-height: 24px;
+}
+
+@media(max-width: 767px) {
+
+    .lap-section .feature-item,
+    .lap-section .document-card {
+        min-height: auto;
+    }
+}

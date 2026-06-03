@@ -1,0 +1,272 @@
+{% extends 'base.html' %}
+
+{% block title %}Loan Against Property - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/personal-loan.css" rel="stylesheet" type="text/css" />
+<link href="{{ MEDIA_BLOG_URL }}css/services/loan-against-property.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Services</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Loan Against Property</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="personal-loan-section lap-section">
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="loan-header">
+
+      <div class="loan-title-box">
+        <h2>LOAN</h2>
+        <span>AGAINST PROPERTY</span>
+      </div>
+
+      <div class="loan-content">
+        <p>
+          LAP loan can be availed by salaried professionals, self-employed individuals and
+          also those who have a stable source of income such as rental income. A minimum
+          income criterion applies to ensure repayment capacity.
+        </p>
+        <p>
+          A Loan Against Property (LAP) allows borrowers to leverage the value of their
+          residential or commercial property and obtain funds for business expansion,
+          debt consolidation, education, medical emergencies, or other personal and
+          professional needs.
+        </p>
+
+        <img src="{{ MEDIA_IMG_URL }}images/LOAN-AGAINST-PROPERTY.jpg" alt="Loan Against Property" class="loan-banner"
+          decoding="async" fetchpriority="high">
+      </div>
+
+    </div>
+
+    <!-- Features Section -->
+    <div class="loan-features">
+      <h3>Features of Loan Against Property:</h3>
+
+      <div class="features-grid">
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>The loan is secured in nature.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Available only against clear and marketable property.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Long repayment tenure ranging from 7 to 15 years.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Lower interest rates compared to unsecured loans.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Funds can be used for personal or business purposes.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Ideal for debt consolidation and business expansion.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Higher loan eligibility based on property value.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check"></i></div>
+          <p>Can be structured as overdraft or dropline overdraft.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Documents Section -->
+    <div class="documents-section">
+      <h3>Documents required:</h3>
+
+      <div class="document-grid">
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Income-proof.svg" alt="Income Proof">
+          <h4>Income Proof</h4>
+          <p>Income Tax Returns with Computation</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg" alt="Bank Statement">
+          <h4>Bank Statement</h4>
+          <p>Last 12 Months Bank Statement</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Property Documents">
+          <h4>Property Documents</h4>
+          <p>Property Related Documents</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Identity-proof.svg" alt="Title Deeds">
+          <h4>Title Deeds</h4>
+          <p>Original Title Deeds of Property</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/3-Months-Salary-Slip.svg" alt="Property Tax">
+          <h4>Property Tax</h4>
+          <p>Latest Property Tax Receipt</p>
+        </div>
+
+        <div class="document-card">
+          <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="NOC">
+          <h4>NOC</h4>
+          <p>NOC from Housing Society</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section">
+      <h3>FAQS ON LOAN AGAINST PROPERTY</h3>
+
+      <div class="faq-item active">
+        <div class="faq-title">
+          WHO CAN AVAIL LAP?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Salaried professionals, self-employed individuals and people with stable income sources such as rental
+            income can avail LAP.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          WHAT IS THE DIFFERENCE BETWEEN A HOME LOAN AND LAP?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Home loans are meant for buying or constructing a house, while LAP allows borrowing against an already
+            owned property for multiple purposes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I USE LAP FOR ANY PERSONAL PURPOSE?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Yes. LAP can be used for personal, professional or business requirements.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I CLOSE OTHER LOANS WITH LAP?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Yes. Many borrowers use LAP to consolidate higher-cost loans into a lower-interest secured facility.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          HOW MUCH LOAN CAN I GET?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Typically 50%–70% of the market value depending upon property type, borrower profile and lender policies.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I GET AN OVERDRAFT AGAINST MY PROPERTY?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Yes. Many lenders offer overdraft facilities where interest is charged only on the utilized amount.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I GET LAP ON A LEASED PROPERTY?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Yes. Lease Rental Discounting (LRD) is a popular product where rental income is considered while evaluating
+            eligibility.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I GET TAX BENEFITS ON LAP?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Generally no direct tax benefits are available as in home loans, though interest may be claimed as a
+            business expense where applicable.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I SELL THE PROPERTY DURING THE LOAN TENURE?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Yes, subject to lender approval and closure or transfer of outstanding dues.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I GET LAP ON A PLOT?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Most private banks do not fund vacant plots, though some nationalized banks may consider them.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          CAN I GET A LOAN AGAINST AN INDUSTRIAL SHED?
+          <span>+</span>
+        </div>
+        <div class="faq-content">
+          <p>Some lenders may consider industrial properties based on structure, valuation and lending policies.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/services/personal-loan.js"></script>
+{% endblock %}
