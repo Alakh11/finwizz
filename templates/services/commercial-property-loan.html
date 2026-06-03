@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}Commercial Property Loan - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/commercial-property-loan.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Commercial Property Loan</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="commercial-property-section">
+    <div class="container">
+
+        <div class="loan-header">
+
+            <div class="loan-title-box">
+                <h2>COMMERCIAL PROPERTY</h2>
+                <span>LOAN</span>
+            </div>
+
+            <div class="loan-content">
+
+                <p>
+                    Nothing is more soul-crunching than a business without
+                    a perfect setting to thrive. As a businessperson, one
+                    is already forsaking numerous things for the growth of
+                    business and not having a proper physical address with
+                    the right working environment mustn’t be one of them.
+                    Commercial Property Loans is the perfect business fit
+                    to nestle and nurture one’s professional dreams.
+                </p>
+
+                <p>
+                    Whether it is buying space for your first office or
+                    for subsequent branches or simply to invest in
+                    commercial real estate for rental income, Commercial
+                    Property loans are the answer. Like Home loans and
+                    other property based loans, the consumer borrows from
+                    a lender (typically a Bank, an NBFC or a housing
+                    finance company), to purchase a commercial property
+                    and offers the same property to the lender as
+                    security.
+                </p>
+
+                <img src="{{ MEDIA_IMG_URL }}images/COMMERCIAL-PROPERTY-LOAN.jpg"
+                    srcset="{{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/COMMERCIAL-PROPERTY-LOAN.jpg 766w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/COMMERCIAL-PROPERTY-LOAN-300x157.jpg 300w"
+                    sizes="(max-width: 766px) 100vw, 766px" alt="Commercial Property Loan" class="loan-banner"
+                    decoding="async" fetchpriority="high">
+            </div>
+
+        </div>
+
+        <div class="documents-section">
+
+            <h3>Documents required:</h3>
+
+            <div class="document-category">
+
+                <h4>For Self Employed Professionals</h4>
+
+                <div class="document-grid">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Address Icon">
+                        <h5>Property Papers</h5>
+                        <p>Copy of Property Papers</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/KYC-PAN-Card-and-Aadhar-Card.svg" alt="KYC Icon">
+                        <h5>KYC</h5>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Identity-proof.svg" alt="Identity Icon">
+                        <h5>Residence Proof</h5>
+                        <p>Current Residence Proof</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Income-proof.svg" alt="Income Icon">
+                        <h5>Salary Slip</h5>
+                        <p>Last 3 Months’ Salary Slip</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg"
+                            alt="Bank Statement Icon">
+                        <h5>Bank Statement</h5>
+                        <p>Bank Statement for last 6 Months</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/2-Years-Form-16.svg" alt="Form 16 Icon">
+                        <h5>Form 16</h5>
+                        <p>Form 16 for 2 Years</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-category" style="margin-top: 60px;">
+                <h4>For Salaried Professionals</h4>
+
+                <div class="document-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Address Icon">
+                        <h5>Property Papers</h5>
+                        <p>Copy of Property Papers</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/KYC-PAN-Card-and-Aadhar-Card.svg" alt="KYC Icon">
+                        <h5>KYC</h5>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Companys-ID-Proof.svg" alt="ID Proof Icon">
+                        <h5>Business Address</h5>
+                        <p>Business Address Proof</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/services/commercial-property-loan.js"></script>
+{% endblock %}
