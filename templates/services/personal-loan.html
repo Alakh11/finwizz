@@ -1,0 +1,324 @@
+{% extends 'base.html' %}
+
+{% block title %}Personal Loan - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/personal-loan.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Personal Loan</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="personal-loan-section">
+    <div class="container">
+
+        <div class="loan-header">
+
+            <div class="loan-title-box">
+                <h2>PERSONAL</h2>
+                <span>LOAN</span>
+            </div>
+
+            <div class="loan-content">
+                <p>
+                    A dream is envisioned and conceived in many forms – it
+                    may be in the shape of a newly renovated home, an
+                    essential appliance, an extravagant wedding ceremony,
+                    or even a well-deserved long holiday abroad. A
+                    Personal Loan is an aid to make those dreams come
+                    true. However, it is not limited to dreams, it covers
+                    other essential and emergency expenses as well as
+                    helps to keep our lives on track. By definition,
+                    Personal Loan is any purpose loan which is given
+                    without any collateral or guarantor.
+                </p>
+                <p>
+                    This is a very unique loan product wherein the
+                    borrower is at his/her discretion to do whatever they
+                    want to with the money received, without limiting it
+                    to one specific reason. However, it should not be used
+                    for speculative purposes and investment in tax-saving
+                    instruments. The loan can be repaid like other kinds
+                    of loans through the Equated Monthly Instalment - EMI
+                    (Use EMI Calculator) process where a fixed amount is
+                    paid each month.
+                </p>
+
+                <img src="{{ MEDIA_IMG_URL }}images/Personal-Loan-01.png"
+                    srcset="{{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/Personal-Loan-01.png 5001w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/Personal-Loan-01-300x157.png 300w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/Personal-Loan-01-1024x536.png 1024w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/Personal-Loan-01-768x402.png 768w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/Personal-Loan-01-1536x804.png 1536w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/Personal-Loan-01-2048x1072.png 2048w"
+                    sizes="(max-width: 5001px) 100vw, 5001px" alt="Personal Loan" class="loan-banner" decoding="async"
+                    fetchpriority="high">
+            </div>
+
+        </div>
+
+        <div class="loan-features">
+            <h3>Features of Personal Loan:</h3>
+
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Provided without any specific purpose.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>No collateral or guarantor required.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Attractive Rate Of Interest.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Shorter term loans compared to other loans (i.e 3 to 5 years).</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>TAT for Personal Loan is 48 hours.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Personal loan ranges from Rs.50,000 to Rs.50 Lakhs approximately and are typically repaid in tenures
+                    ranging from 1 to 5 years.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Higher Loan Amount + Least Loan Tenure = Low Interest Amount.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="documents-section">
+            <h3>Documents required:</h3>
+            <div class="document-grid">
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/kyc.svg" alt="KYC Icon">
+                    <h4>KYC</h4>
+                    <p>PAN Card and Aadhar Card</p>
+                </div>
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/id.svg" alt="ID Icon">
+                    <h4>ID Proof</h4>
+                    <p>Company’s ID Proof</p>
+                </div>
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/residence.svg" alt="Residence Icon">
+                    <h4>Residence Proof</h4>
+                    <p>Electricity Bill</p>
+                </div>
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/residence.svg" alt="Salary Slip Icon">
+                    <h4>Salary Slip</h4>
+                    <p>3 Month's Salary Slip</p>
+                </div>
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/salary.svg" alt="Bank Statement Icon">
+                    <h4>Bank Statement</h4>
+                    <p>Last 6 months</p>
+                </div>
+                <div class="document-card">
+                    <img src="{{ MEDIA_IMG_URL }}images/2years.svg" alt="Form 16 Icon">
+                    <h4>Form 16</h4>
+                    <p>2 Years Form 16</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3>FAQS ON PERSONAL LOAN</h3>
+
+            <div class="faq-item active">
+                <div class="faq-title">
+                    FROM WHERE CAN I GET A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Personal Loans are offered by nationalized banks, private banks and a few Non Banking Finance
+                        Companies.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IS A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>An individual who has a source of income as salary or business income can apply for a personal
+                        loan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHO CAN APPLY FOR A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>An individual who has a source of income as salary or business income can apply for a personal
+                        loan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IF A FEW EMI ARE NOT PAID IN TIME?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>It is in the interest of the borrower to repay all the EMI as per schedule. Delay in payment of
+                        EMI or default would badly affect the credibility of the borrower. Moreover getting a loan at a
+                        later stage would be difficult. Generally banks share the credit history of a borrower with
+                        credit bureau and in turn they share data of credit history of a borrower with other banks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IF I WANT TO PREPAY MY PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Most banks allow their customers to prepay personal loans after 6 months of disbursement .
+                        Generally, banks charge a penalty as prepayment charges on the principal outstanding.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    CAN I GET A REBATE ON THE INTEREST RATE &amp; PROCESSING FEE?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, a few banks offer special rates to those who have a good reputative relationship with their
+                        bank. The relationship could be a bank account, existing loan, a credit card etc.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    HOW MUCH TIME DOES IT TAKE TO GET A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Generally it takes 1 to 3 working days to get a personal loan sanctioned after completion of all
+                        formalities in terms of compliance in documentation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IS THE RATE OF INTEREST THAT WILL BE CHARGED ON MY PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Rate of interest is a factor of prime lending rate (PLR) as announced by respective banks from
+                        time to time which varies with market conditions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    IS THERE ANY MORATORIUM PERIOD FOR REPAYING PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>No, moratorium is not applicable for personal loans. Generally first EMI starts within 45 days of
+                        the disbursement of loan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    HOW DO I REPAY A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Personal loans are generally repaid by way of equated monthly instalments(EMI)</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    IS THERE ANY FEE FOR AVAILING A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, processing fee is applicable only one time, at the time of loan disbursement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IS THE MAXIMUM TENOR FOR A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>The tenor of personal loan ranges from 12 months to 60 months. However it should be noted that
+                        tenor is the discretion of the bank and also in most of the case, the tenor is restricted to 36
+                        months.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHAT IS THE MAXIMUM AMOUNT ONE CAN GET AS A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Personal loans are available in the range of Rs. 50,000 to Rs. 50 lacs depending on the income
+                        eligibility of an applicant. However banks also have specially designed products to offer higher
+                        loans.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    WHEN CAN ONE APPLY FOR A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>You can apply for a personal loan in order to fulfill any of your personal needs which requires
+                        financial assistance such as buying a plot, wedding expenses, hospitalization expenses, holiday
+                        packages, buying jewellery, higher education, etc.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    IS THERE ANY SECURITY OR COLLATERAL FOR A PERSONAL LOAN?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Personal loans does not require any collateral or security. Exceptionally in some cases, a
+                        Co-applicant is required if certain norms are not met by the applicant.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/services/personal-loan.js"></script>
+{% endblock %}
