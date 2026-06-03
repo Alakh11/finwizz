@@ -17,7 +17,7 @@
 
 .loan-title-box h2 {
     display: inline-block;
-    font-size: 58px;
+    font-size: 40px;
     line-height: 1.2;
     color: #000066;
     margin: 0;
@@ -26,9 +26,9 @@
 
 .loan-title-box span {
     display: inline-block;
-    font-size: 58px;
+    font-size: 40px;
     line-height: 1.2;
-    color: #ffb400;
+    color: #237ee0;
     font-weight: 700;
     margin-left: 10px;
 }
