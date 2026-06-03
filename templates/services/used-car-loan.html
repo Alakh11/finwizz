@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+
+{% block title %}Used Car Loan - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/personal-loan.css" rel="stylesheet" type="text/css" />
+<link href="{{ MEDIA_BLOG_URL }}css/services/used-car-loan.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Used Car Loan</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="personal-loan-section used-car-loan-section">
+    <div class="container">
+
+        <div class="loan-header">
+
+            <div class="loan-title-box">
+                <h2>USED CAR</h2>
+                <span>LOAN</span>
+            </div>
+
+            <div class="loan-content">
+                <p>
+                    Did you know that you could use your car to raise
+                    cheap funds? The same can further be used for various
+                    purposes, like expansion of business, renovation of
+                    your house, higher education of children or a foreign
+                    trip.
+                </p>
+
+                <p>
+                    You just need to apply for a loan against your
+                    car and you can get a loan up to 150% of the valuation
+                    of your car at attractive interest rates.
+                </p>
+
+                <img src="{{ MEDIA_IMG_URL }}images/USED-CAR-LOAN.jpg" alt="Used Car Loan" class="loan-banner"
+                    decoding="async" fetchpriority="high">
+            </div>
+
+        </div>
+
+        <div class="loan-features">
+            <h3>Features of Used Car Loan:</h3>
+
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Covers a wide range of cars including MUVs and SUVs under pre-owned car loans.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Loans available for vehicles up to 7 years old.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Low rates of interest as compared to other unsecured loans.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Minimum documents required for processing.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Speedy loan disbursements.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check"></i></div>
+                    <p>Funds can be used for any financial requirements.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="documents-section">
+            <h3>Documents required:</h3>
+
+            <div class="document-category">
+                <h4>FOR SELF EMPLOYED PROFESSIONALS</h4>
+
+                <div class="document-grid">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/KYC-PAN-Card-and-Aadhar-Card.svg" alt="KYC Icon">
+                        <h5>KYC</h5>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Address Icon">
+                        <h5>Ownership Proof</h5>
+                        <p>Ownership verification documents</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/BANKING-24.svg" alt="ITR Icon">
+                        <h5>Income Tax Returns</h5>
+                        <p>Income Tax Returns of last 2 Years</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg"
+                            alt="Bank Statement Icon">
+                        <h5>Bank Statement</h5>
+                        <p>Bank Statement of last 6 Months</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Income-proof.svg" alt="Partnership Icon">
+                        <h5>Business Proof</h5>
+                        <p>Partnership Deed / MoA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salaried Professionals -->
+            <div class="document-category" style="margin-top: 60px;">
+                <h4>FOR SALARIED PROFESSIONALS</h4>
+
+                <div class="document-grid">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/KYC-PAN-Card-and-Aadhar-Card.svg" alt="KYC Icon">
+                        <h5>KYC</h5>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Address Icon">
+                        <h5>Ownership Proof</h5>
+                        <p>Ownership verification documents</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/BANKING-24.svg" alt="ITR Icon">
+                        <h5>Income Tax Returns</h5>
+                        <p>Income Tax Returns of last 2 Years</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg"
+                            alt="Bank Statement Icon">
+                        <h5>Bank Statement</h5>
+                        <p>Bank Statement of last 6 Months</p>
+                    </div>
+
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Qualification-proof.svg" alt="Degree Icon">
+                        <h5>Professional Proof</h5>
+                        <p>Degree Certificate &amp; Certificate of Registration</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/services/personal-loan.js"></script>
+{% endblock %}

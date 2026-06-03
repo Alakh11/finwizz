@@ -1,0 +1,43 @@
+.used-car-loan-section .loan-banner {
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+}
+
+.used-car-loan-section .document-category h4 {
+    text-align: center;
+    color: #000066;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.used-car-loan-section .document-card h5 {
+    color: #000066;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+@media(min-width: 992px) {
+    .used-car-loan-section .document-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .used-car-loan-section .document-category h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 350px) {
+    .used-car-loan-section .document-category h4 {
+        font-size: 18px;
+    }
+
+    .used-car-loan-section .document-card h5 {
+        font-size: 16px;
+    }
+}
