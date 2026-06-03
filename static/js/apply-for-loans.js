@@ -13,15 +13,15 @@ function revertButtonState() {
 
 $(document).ready(function () {
 
-    $('#loan_location').on('change', function () {
-        if ($(this).val() === 'OTHERS') {
+    $('#loan_location').on('change', function() {
+        if ($(this).val() === 'Others') {
             $('#other_location_wrap').slideDown();
         } else {
             $('#other_location_wrap').slideUp();
             $('#other_location').val('');
 
             let form = $('#applyLoanForm').validate();
-            if (form) {
+            if(form) {
                 form.element('#other_location');
             }
         }
@@ -95,7 +95,7 @@ $(document).ready(function () {
             loan_location: { required: true },
             other_location: {
                 required: function () {
-                    return $("#loan_location").val() === "OTHERS";
+                    return $("#loan_location").val() === "Others";
                 },
                 minlength: 2
             },
