@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+
+{% block title %}Apply For Loans - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/apply-for-loans.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb mb-0">
+				<li class="breadcrumb-item">
+					<a href="{% url 'home' %}" class="text-decoration-none">
+						Home
+					</a>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page">
+					Apply For Loans
+				</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+
+<section class="apply-loan-section">
+	<div class="container">
+		<div class="loan-heading-wrap">
+			<h1 class="loan-heading">
+				Apply For Loans
+			</h1>
+			<!-- <p class="loan-subheading">
+				Get connected with our loan experts and receive assistance for the best loan options.
+			</p> -->
+		</div>
+
+		<div class="loan-wrapper">
+			<div class="loan-left">
+				<div class="loan-card">
+					<h3>Address</h3>
+					<h4>
+						Finwizz Financial Services Pvt Ltd
+					</h4>
+					<p>
+						Office No. 101 TO 104,
+						First Floor, Vikram Goldmine,
+						OFF. F C Road, Pune 411004
+					</p>
+
+					<div class="social-section">
+						<h3>Follow Us</h3>
+						<ul class="social-links">
+							<li>
+								<a href="https://www.facebook.com/FinwizzLoansFISPL" target="_blank">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/finwizzloans/" target="_blank">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/company/finwizz/" target="_blank">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="map-wrap">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15132.924609962567!2d73.8420453!3d18.5184536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1b6e45ea1fad41c!2sFINWIZZ%20FINANCIAL%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1621510487041!5m2!1sen!2sin"
+							allowfullscreen="" loading="lazy">
+						</iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="loan-right">
+				<form id="applyLoanForm" novalidate>
+					{% csrf_token %}
+
+					<div class="form-group">
+						<label for="loan_name">Your Name</label>
+						<input type="text" id="loan_name" name="loan_name" class="form-control"
+							placeholder="Enter Your Name" autocomplete="off">
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="loan_location">Location</label>
+						<select id="loan_location" name="loan_location" class="form-control">
+							<option value="" disabled selected>—Please choose an option—</option>
+							<option value="AHMEDABAD">AHMEDABAD</option>
+							<option value="AJMER">AJMER</option>
+							<option value="AURANGABAD">AURANGABAD</option>
+							<option value="BANGALORE">BANGALORE</option>
+							<option value="BARODA">BARODA</option>
+							<option value="BHILAI">BHILAI</option>
+							<option value="BHOPAL">BHOPAL</option>
+							<option value="BILASPUR">BILASPUR</option>
+							<option value="CALICUT">CALICUT</option>
+							<option value="CHANDIGARH">CHANDIGARH</option>
+							<option value="CHENNAI">CHENNAI</option>
+							<option value="COCHIN">COCHIN</option>
+							<option value="COIMBATORE">COIMBATORE</option>
+							<option value="CUTTACK">CUTTACK</option>
+							<option value="DEHRADUN">DEHRADUN</option>
+							<option value="DELHI">DELHI</option>
+							<option value="FARIDABAD">FARIDABAD</option>
+							<option value="GANDHI NAGAR">GANDHI NAGAR</option>
+							<option value="GHAZIABAD">GHAZIABAD</option>
+							<option value="GOA">GOA</option>
+							<option value="GURGAON">GURGAON</option>
+							<option value="GUWAHATI">GUWAHATI</option>
+							<option value="HYDERABAD">HYDERABAD</option>
+							<option value="INDORE">INDORE</option>
+							<option value="JAIPUR">JAIPUR</option>
+							<option value="JAMMU">JAMMU</option>
+							<option value="JAMSHEDPUR">JAMSHEDPUR</option>
+							<option value="JODHPUR">JODHPUR</option>
+							<option value="KANPUR">KANPUR</option>
+							<option value="KOLHAPUR">KOLHAPUR</option>
+							<option value="KOLKATA">KOLKATA</option>
+							<option value="KOTA">KOTA</option>
+							<option value="LUCKNOW">LUCKNOW</option>
+							<option value="LUDHIANA">LUDHIANA</option>
+							<option value="MANGALORE">MANGALORE</option>
+							<option value="MUMBAI">MUMBAI</option>
+							<option value="MYSORE">MYSORE</option>
+							<option value="NAGPUR">NAGPUR</option>
+							<option value="NASIK">NASIK</option>
+							<option value="NOIDA">NOIDA</option>
+							<option value="PATNA">PATNA</option>
+							<option value="PUNE">PUNE</option>
+							<option value="RAIPUR">RAIPUR</option>
+							<option value="RAJKOT">RAJKOT</option>
+							<option value="RANCHI">RANCHI</option>
+							<option value="SHIMLA">SHIMLA</option>
+							<option value="SILIGURI">SILIGURI</option>
+							<option value="SOLAPUR">SOLAPUR</option>
+							<option value="SURAT">SURAT</option>
+							<option value="TRIVANDRUM">TRIVANDRUM</option>
+							<option value="VIJAYAWADA">VIJAYAWADA</option>
+							<option value="VIZAG">VIZAG</option>
+							<option value="OTHERS">OTHERS</option>
+						</select>
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group" id="other_location_wrap" style="display: none;">
+						<label for="other_location">Specify Other Location</label>
+						<input type="text" id="other_location" name="other_location" class="form-control"
+							placeholder="Enter Your City" autocomplete="off">
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="employment_status">Employment Status</label>
+						<select id="employment_status" name="employment_status" class="form-control">
+							<option value="" disabled selected>—Please choose an option—</option>
+							<option value="Salaried">Salaried</option>
+							<option value="Self Employed">Self Employed</option>
+							<option value="Self Employed Professional">Self Employed Professional</option>
+						</select>
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="loan_type">Loan Type</label>
+						<select id="loan_type" name="loan_type" class="form-control">
+							<option value="" disabled selected>—Please choose an option—</option>
+							<option value="Personal Loan">Personal Loan</option>
+							<option value="Business Loan">Business Loan</option>
+							<option value="Home Loan">Home Loan</option>
+							<option value="Loan Against property">Loan Against property</option>
+							<option value="Commercial Property Loan">Commercial Property Loan</option>
+							<option value="Loans for Doctors">Loans for Doctors</option>
+						</select>
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="loan_email">Email Address</label>
+						<input type="email" id="loan_email" name="loan_email" class="form-control"
+							placeholder="Enter Email Address" autocomplete="off">
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="loan_mobile">Mobile Number</label>
+						<input type="text" id="loan_mobile" name="loan_mobile" maxlength="10" class="form-control"
+							placeholder="Enter Mobile Number" autocomplete="off">
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group checkbox-group">
+						<label class="consent-label" for="consent_data">
+							<input type="checkbox" id="consent_data" name="consent_data">
+							<span class="consent-text"> I agree Finwizz to collecting and processing my personal data to
+								respond to my request and provide related services.</span>
+						</label>
+						<span class="help-block"></span>
+					</div>
+
+					<div class="form-group checkbox-group">
+						<label class="consent-label" for="consent_terms">
+							<input type="checkbox" id="consent_terms" name="consent_terms">
+							<span class="consent-text">I agree to Finwizz <a href="/privacy-policy/"
+									target="_blank">Privacy Policy</a> and <a href="/terms-and-conditions/"
+									target="_blank">Terms & Conditions</a>.</span>
+						</label>
+						<span class="help-block"></span>
+					</div>
+					<button type="submit" class="career-btn">
+						<span class="btn-text">Apply Now</span>
+						<span class="btn-loader">
+							<i class="fas fa-spinner fa-spin"></i>
+							Processing...
+						</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/apply-for-loans.js"></script>
+{% endblock %}

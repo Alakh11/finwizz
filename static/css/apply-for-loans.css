@@ -1,0 +1,323 @@
+.apply-loan-section {
+    padding: 80px 0;
+    background: #f5f7fb;
+}
+
+.loan-heading-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.loan-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000066;
+}
+
+.loan-subheading {
+    margin-top: 10px;
+    color: #666;
+    font-size: 16px;
+}
+
+.loan-wrapper {
+    display: flex;
+    gap: 35px;
+}
+
+.loan-left {
+    width: 40%;
+}
+
+.loan-right {
+    width: 60%;
+    background: #fff;
+    border-radius: 22px;
+    padding: 45px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .06);
+}
+
+.loan-card {
+    background: #000066;
+    color: #fff;
+    border-radius: 22px;
+    padding: 45px;
+    height: 100%;
+}
+
+.loan-card h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.loan-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.loan-card p {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.social-section {
+    margin: 35px 0;
+}
+
+.social-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin-bottom: 12px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 16px;
+    background: transparent !important;
+}
+
+.social-links i {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    color: #000066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.map-wrap iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 14px;
+    transition: 0.3s;
+    outline: none;
+    background: #fff;
+}
+
+.form-control:focus {
+    border-color: #000066;
+    box-shadow: 0 0 0 4px rgba(0, 0, 102, 0.08);
+}
+
+select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23000066' viewBox='0 0 16 16'%3E%3Cpath d='M2 5l6 6 6-6' stroke='%23000066' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 14px;
+    padding-right: 45px;
+    cursor: pointer;
+}
+
+.help-block {
+    display: block;
+    color: #e53935;
+    font-size: 13px;
+    margin-top: 7px;
+    min-height: 18px;
+}
+
+.form-group.has-error .form-control {
+    border-color: #e53935;
+}
+
+.form-group.has-error .form-control:focus {
+    box-shadow: 0 0 0 4px rgba(229, 57, 53, 0.08);
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+.consent-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.consent-label input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.consent-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.consent-text a {
+    color: #000066;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.career-btn {
+    width: 100%;
+    height: 58px;
+    border: none;
+    border-radius: 999px;
+    background: #000066;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.career-btn:hover {
+    background: #00004d;
+}
+
+.career-btn.loading {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.career-btn.loading .btn-text {
+    display: none;
+}
+
+.btn-loader {
+    display: none;
+}
+
+.career-btn.loading .btn-loader {
+    display: inline-block;
+}
+
+/* --- Responsive Layout --- */
+
+@media(max-width: 991px) {
+
+    .loan-left,
+    .loan-right {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .loan-wrapper {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .apply-loan-section {
+        padding: 40px 0;
+    }
+
+    .loan-card,
+    .loan-right {
+        padding: 30px;
+    }
+}
+
+@media(max-width: 480px) {
+    .loan-heading {
+        font-size: 32px;
+    }
+
+    .loan-card,
+    .loan-right {
+        padding: 20px;
+        border-radius: 15px;
+    }
+}
+
+@media(max-width: 374px) {
+    .loan-heading {
+        font-size: 26px;
+    }
+
+    .loan-card,
+    .loan-right {
+        padding: 15px;
+    }
+
+    .loan-card h3 {
+        font-size: 24px;
+    }
+
+    .loan-card h4 {
+        font-size: 18px;
+    }
+
+    .social-section h3 {
+        font-size: 20px;
+    }
+
+    .social-links a {
+        font-size: 14px;
+    }
+
+    .social-links i {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .consent-text {
+        font-size: 13px;
+    }
+
+    .career-btn {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .form-control {
+        height: 48px;
+        font-size: 13px;
+    }
+}
