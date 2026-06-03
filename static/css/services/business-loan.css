@@ -1,0 +1,277 @@
+.business-loan-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.loan-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.loan-title-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.loan-title-box h2 {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #000066;
+    margin: 0;
+    font-weight: 700;
+}
+
+.loan-title-box span {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #237ee0;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.loan-content {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.loan-content p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.loan-banner {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 40px auto 0;
+    border-radius: 18px;
+    height: auto;
+}
+
+.documents-section h3,
+.faq-section h3 {
+    font-size: 32px;
+    color: #000066;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Documents Section */
+.documents-section {
+    margin-bottom: 80px;
+}
+
+.document-category {
+    margin-bottom: 50px;
+}
+
+.document-category h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000066;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.document-card {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    transition: .3s;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.document-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.document-card h4 {
+    font-size: 18px;
+    color: #000066;
+    margin-bottom: 8px;
+}
+
+.document-card p {
+    margin: 0;
+    color: #666;
+}
+
+/* FAQ UI */
+.faq-item {
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-title {
+    padding: 18px 25px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000066;
+    gap: 15px;
+}
+
+.faq-title span {
+    font-size: 22px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.faq-content {
+    display: none;
+    padding: 20px 25px;
+    border-top: 1px solid #eee;
+    color: #555;
+    line-height: 28px;
+    background: #fafafa;
+}
+
+.faq-content p {
+    margin-bottom: 0;
+}
+
+.faq-item.active .faq-content {
+    display: block;
+}
+
+.faq-item.active .faq-title span {
+    transform: rotate(45deg);
+}
+
+/* --- Responsive Breakpoints --- */
+
+@media(max-width: 991px) {
+    .document-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 767px) {
+    .business-loan-section {
+        padding: 50px 0;
+    }
+
+    .loan-title-box h2,
+    .loan-title-box span {
+        font-size: 40px;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .loan-content p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .documents-section h3,
+    .faq-section h3 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .document-category h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    .loan-title-box h2,
+    .loan-title-box span {
+        font-size: 32px;
+    }
+
+    .documents-section h3,
+    .faq-section h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .document-card {
+        padding: 20px;
+    }
+
+    .faq-title {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .faq-content {
+        padding: 15px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width: 350px) {
+    .business-loan-section {
+        padding: 35px 0;
+    }
+
+    .loan-title-box h2,
+    .loan-title-box span {
+        font-size: 28px;
+    }
+
+    .documents-section h3,
+    .faq-section h3 {
+        font-size: 22px;
+    }
+
+    .document-category h4 {
+        font-size: 18px;
+    }
+
+    .document-card img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .document-card h4 {
+        font-size: 16px;
+    }
+
+    .document-card p {
+        font-size: 13px;
+    }
+    
+    .faq-title {
+        font-size: 13px;
+        padding: 12px;
+    }
+}

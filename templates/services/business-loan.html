@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+
+{% block title %}Business Loan - Finwizz{% endblock %}
+
+{% block extra_css %}
+<link href="{{ MEDIA_BLOG_URL }}css/services/business-loan.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<section class="bg-light py-3 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Business Loan</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="business-loan-section">
+    <div class="container">
+
+        <div class="loan-header">
+
+            <div class="loan-title-box">
+                <h2>BUSINESS</h2>
+                <span>LOAN</span>
+            </div>
+
+            <div class="loan-content">
+                <p>
+                    Funding is the overarching protagonist in every businessman’s life. It is
+                    the first and the last thing discussed while running a business and as
+                    we all know, running a business is no mean feat. And no business
+                    deserves to be an unfortunate casualty of fund crunch. Which is why
+                    business loans exist.
+                </p>
+                <p>
+                    Business loan is a fairly generic term used for different types of
+                    finance options that a business can access. In the current context,
+                    under Business loan we are largely referring to unsecured income-based
+                    loans for self-employed individuals or companies. Unsecured business
+                    loans have no requirement for a security or collateral to be submitted
+                    and are offered purely on the current financial strength and past credit
+                    record of the borrower.
+                </p>
+                <p>
+                    They are not as flexible as overdrafts and other credit lines that
+                    support day-to-day working capital requirements but given their
+                    unsecured nature, they are relatively easy to avail with simple
+                    paperwork and speedy processing. However, that also means that Business
+                    loans are usually costlier than other forms of secured business finance.
+                </p>
+
+                <img src="{{ MEDIA_IMG_URL }}images/business-loan.jpg"
+                    srcset="{{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/business-loan.jpg 766w, {{ MEDIA_IMG_URL }}wp-content/uploads/2023/06/business-loan-300x157.jpg 300w"
+                    sizes="(max-width: 766px) 100vw, 766px" alt="Business Loan" class="loan-banner" decoding="async"
+                    fetchpriority="high">
+            </div>
+
+        </div>
+
+        <div class="documents-section">
+            <h3>Documents required:</h3>
+
+            <div class="document-category">
+                <h4>For Self Employed Professionals</h4>
+                <div class="document-grid">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/kyc.svg" alt="KYC Icon">
+                        <h4>KYC</h4>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Address-proof.svg" alt="Address Icon">
+                        <h4>Ownership Proof</h4>
+                        <p>Residence or Office</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Income-proof.svg" alt="Income Icon">
+                        <h4>Income Tax Returns</h4>
+                        <p>Last 2 Years</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/3-Months-Salary-Slip.svg" alt="Bank Statement Icon">
+                        <h4>Bank Statement</h4>
+                        <p>Last 6 Months</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/kyc.svg" alt="Entity KYC Icon">
+                        <h4>Entity KYC</h4>
+                        <p>KYC of Entity</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Qualification-proof.svg" alt="Partnership Icon">
+                        <h4>Partnership Deed/MoA</h4>
+                        <p>Entity Documents</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-category" style="margin-top: 60px;">
+                <h4>For Salaried Professionals</h4>
+                <div class="document-grid">
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/kyc.svg" alt="KYC Icon">
+                        <h4>KYC</h4>
+                        <p>PAN Card and Aadhar Card</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/salary.svg" alt="Ownership Icon">
+                        <h4>Ownership Proof</h4>
+                        <p>Residence or Office</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Income-proof.svg" alt="Income Returns Icon">
+                        <h4>Income Tax Returns</h4>
+                        <p>Latest Filed Returns</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Bank-Statement-of-last-6-months.svg"
+                            alt="Bank Statement Icon">
+                        <h4>Bank Statement</h4>
+                        <p>Last 6 Months</p>
+                    </div>
+                    <div class="document-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/Qualification-proof.svg" alt="Degree Icon">
+                        <h4>Certificate</h4>
+                        <p>Degree Certificate & Certificate of Registration</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3>FAQS ON BUSINESS LOAN</h3>
+
+            <div class="faq-item active">
+                <div class="faq-title">
+                    What is a Business Loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Business loan is a kind of finance aid that anyone can avail in order to meet the urgent
+                        requirements.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    Who can apply for a Business Loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Any individual who has a source of income from his/her business, can apply for a business loan.
+                        Even businesses which are operating as Partnership Firms, LLPs, Pvt Ltd Companies, and Deemed
+                        Ltd. Companies can apply for Business Loan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    When can one apply for a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>One can apply for a business loan when a business need arises that requires financial assistance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    Where can I get a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Business loans are offered by nationalized banks, private banks, foreign banks and a few
+                        non-banking finance companies.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    Is there any security or collateral required for a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Business loans do not require any collateral or security.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    What is the maximum amount one can get as a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Business loans are available in the range of Rs. 1 lakh to Rs. 75 Lakhs depending on the income
+                        eligibility of an applicant. However, banks also offer exclusively designed products to offer
+                        higher loans which can go as high as Rs. 125 Lakhs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    What is the maximum tenor for a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>The tenor of business loan ranges from 12 months to 60 months. However, it should be noted that
+                        tenor is the discretion of the bank and also in most cases, the tenor is restricted to 36
+                        months. A few banks offer 60 months tenor to professionals like Doctors, CAs, etc.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    Is there any fee for availing a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, a one time processing fee is applicable at the time of loan disbursement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    How do I repay a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Business loans are generally repaid by way of Equated Monthly Installment (EMI).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    Is there any moratorium period for repaying business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>No, a moratorium is not applicable for business loans. Generally, the first EMI starts within 45
+                        days of the disbursement of loan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    What is the rate of interest that will be charged on my business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Rate of interest is a factor of Prime Lending Rate (PLR) as announced by respective banks from
+                        time to time that again varies with the volatile market conditions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    How much time does it take to get a business loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Generally, it takes 2 to 10 working days to sanction a business loan after completion of all
+                        formalities in terms of compliance in documentation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    Can I get a rebate on the interest rate and processing fee?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Yes, a few banks offer special rates to those who have a good reputative relationship with their
+                        bank. The relationship could be in the form of a bank account, existing loan, a credit card,
+                        along with others.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    What if I want to prepay my Business Loan?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>Most banks allow its customers to prepay business loans after 6 months of disbursement.
+                        Generally, banks charge a penalty of up to 5% as prepayment charges on the principal
+                        outstanding.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">
+                    What if a few EMIs are not paid in time?
+                    <span>+</span>
+                </div>
+                <div class="faq-content">
+                    <p>It is in the interest of the borrower to repay all the EMI as per schedule. Delay in payment of
+                        an EMI or default would badly affect the credibility of the borrower. Moreover, as a
+                        consequence, getting a loan at a later stage might get difficult. Generally banks share the
+                        credit history of a borrower with credit bureau and in turn, they share data of credit history
+                        of the borrower with other banks.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ MEDIA_BLOG_URL }}js/services/business-loan.js"></script>
+{% endblock %}
