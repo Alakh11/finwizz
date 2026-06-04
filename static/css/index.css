@@ -264,11 +264,12 @@ section {
     border-color: #e0e6ed;
     border-radius: 25px;
 }
+
 .stats-wrapper-section {
-    padding: 0px 0 0 0;
-    background: #fff;
     position: relative;
     z-index: 10;
+    padding-top: 0;
+    background: transparent;
 }
 
 .stats-box-container {
@@ -277,8 +278,10 @@ section {
     background-position: center center;
     padding: 70px 40px;
     margin-bottom: -130px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    background-color: #fff;
+    border-radius: 4px;
 }
 
 .advisor-overlay {
@@ -289,6 +292,11 @@ section {
     height: 100%;
     background: rgba(255, 255, 255, 0.88);
     z-index: 1;
+}
+
+.stats-content-inner {
+    position: relative;
+    z-index: 2;
 }
 
 .stats-grid {
@@ -324,12 +332,40 @@ section {
 
 .stat-box span {
     font-size: 16px;
-    color: #444;
+    color: #000000;
+}
+
+.counter {
+    color: #000066 !important;
+    font-size: 75px !important;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.talk {
+    color: #000066;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.talk-para {
+    color: #000000;
+    margin: 0 auto;
+    font-size: 18px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+    margin: 0 0 15px;
+    line-height: 31px;
 }
 
 .testimonial-section {
     background: #000066;
-    padding: 220px 0 100px 0;
+    padding: 100px 0 100px 0;
     position: relative;
     z-index: 1;
 }
@@ -370,6 +406,7 @@ section {
     border: 3px solid #f4f6f9;
     background: #fff;
     object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .stars {
@@ -443,7 +480,8 @@ section {
     .section-title h2 {
         font-size: 32px;
     }
-     .stat-box h3 {
+
+    .stat-box h3 {
         font-size: 60px;
     }
 }
@@ -481,6 +519,7 @@ section {
     .stat-box::after {
         display: none !important;
     }
+
     .stats-wrapper-section {
         padding: 50px 0 0 0;
     }
@@ -498,8 +537,8 @@ section {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
-    
-    .stat-box:nth-child(2)::after, 
+
+    .stat-box:nth-child(2)::after,
     .stat-box:nth-child(4)::after {
         display: none !important;
     }
@@ -524,16 +563,6 @@ section {
     .process-content h2 {
         font-size: 28px;
     }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .stat-box h3 {
-        font-size: 45px;
-    }
-
     .testimonial-card {
         padding: 50px 20px 20px;
     }
@@ -614,7 +643,7 @@ section {
     .stat-box h3 {
         font-size: 48px;
     }
-    
+
     .testimonial-section .light h2 {
         font-size: 24px;
     }
