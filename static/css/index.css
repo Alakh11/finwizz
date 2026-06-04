@@ -183,6 +183,7 @@ section {
     color: #247fe1;
     opacity: 1;
 }
+
 .about-section {
     background: #f2f2f2;
 }
@@ -217,7 +218,7 @@ section {
     background: #fff;
     margin-bottom: 15px;
     border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid transparent;
@@ -263,11 +264,21 @@ section {
     border-color: #e0e6ed;
     border-radius: 25px;
 }
+.stats-wrapper-section {
+    padding: 0px 0 0 0;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+}
 
-/* Stats Section */
-.stats-section {
-    padding: 100px 0;
-    background-attachment: fixed !important;
+.stats-box-container {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    padding: 70px 40px;
+    margin-bottom: -130px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
 .advisor-overlay {
@@ -276,7 +287,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.88);
     z-index: 1;
 }
 
@@ -284,7 +295,7 @@ section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .stat-box {
@@ -292,54 +303,53 @@ section {
     position: relative;
 }
 
-.stat-box:not(:last-child)::after {
+.stat-box:not(.border-none)::after {
     content: '';
     position: absolute;
     right: -15px;
-    top: 10%;
-    height: 80%;
+    top: 15%;
+    height: 70%;
     width: 1px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #999;
+    transform: rotate(20deg);
 }
 
 .stat-box h3 {
-    font-size: 55px;
-    margin-bottom: 10px;
-    font-weight: 800;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: normal;
+    color: #000066;
+    margin-bottom: 5px;
 }
 
 .stat-box span {
     font-size: 16px;
+    color: #444;
 }
 
 .testimonial-section {
     background: #000066;
-    padding: 100px 0;
-}
-
-.heading_border {
-    width: 60px;
-    height: 3px;
-    background: #ffb400;
-    margin: 0 auto 20px;
+    padding: 220px 0 100px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .testimonial-section .light h2 {
     color: #fff;
-    text-transform: uppercase;
-    font-size: 32px;
-    letter-spacing: 1px;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .testimonial-inner {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .testimonial-card {
     background: #fff;
-    border-radius: 12px;
-    padding: 50px 30px 30px;
+    border-radius: 4px;
+    padding: 60px 30px 30px;
     text-align: center;
     margin: 0 10px;
     position: relative;
@@ -347,18 +357,17 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-card img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
-    top: -45px;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    border: 4px solid #f4f6f9;
+    border: 3px solid #f4f6f9;
     background: #fff;
     object-fit: cover;
 }
@@ -392,19 +401,20 @@ section {
 }
 
 .custom-indicators {
-    bottom: -15px;
+    bottom: -30px;
 }
 
-.custom-indicators li {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 5px;
+.custom-indicators button {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: 0 5px !important;
+    border: none !important;
 }
 
 .custom-indicators .active {
-    background-color: #ffb400;
+    background-color: #fff !important;
 }
 
 .custom-control-white {
@@ -432,6 +442,9 @@ section {
     .process-content h2,
     .section-title h2 {
         font-size: 32px;
+    }
+     .stat-box h3 {
+        font-size: 60px;
     }
 }
 
@@ -465,9 +478,30 @@ section {
         gap: 40px;
     }
 
-    .stat-box:nth-child(2)::after,
+    .stat-box::after {
+        display: none !important;
+    }
+    .stats-wrapper-section {
+        padding: 50px 0 0 0;
+    }
+
+    .stats-box-container {
+        padding: 50px 20px;
+        margin-bottom: -100px;
+    }
+
+    .testimonial-section {
+        padding: 180px 0 80px 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .stat-box:nth-child(2)::after, 
     .stat-box:nth-child(4)::after {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -496,10 +530,6 @@ section {
         gap: 35px;
     }
 
-    .stat-box::after {
-        display: none;
-    }
-
     .stat-box h3 {
         font-size: 45px;
     }
@@ -515,6 +545,30 @@ section {
 
     #partnerCarousel {
         padding: 0 25px;
+    }
+     .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .stat-box::after {
+        display: none !important;
+    }
+
+    .stat-box h3 {
+        font-size: 55px;
+    }
+
+    .stats-box-container {
+        margin-bottom: -60px;
+    }
+
+    .testimonial-section {
+        padding: 140px 0 60px 0;
+    }
+
+    .testimonial-section .light h2 {
+        font-size: 28px;
     }
 }
 
@@ -557,9 +611,15 @@ section {
         padding: 12px 25px;
         font-size: 14px;
     }
+    .stat-box h3 {
+        font-size: 48px;
+    }
+    
+    .testimonial-section .light h2 {
+        font-size: 24px;
+    }
 }
 
-/* Extra Small Mobile (Down to 300px) */
 @media (max-width: 350px) {
     .hero-slide img {
         height: 280px;
@@ -609,5 +669,11 @@ section {
 
     .custom-control {
         width: 25px;
+    }
+    .stats-box-container {
+        padding: 30px 15px;
+    }
+    .stat-box h3 {
+        font-size: 40px;
     }
 }
