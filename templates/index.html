@@ -23,11 +23,10 @@
             <img src="{{ MEDIA_IMG_URL }}images/home-banner.png" alt="Hero Banner">
 
             <div class="hero-content">
-                <h1>
+                <p class="first-line">
                     <span>We</span> put a full stop
-                    <br>
-                    to your financial worries
-                </h1>
+                </p>
+                <p class="second-line">to your financial worries</p> 
 
                 <a href="{% url 'apply_loans' %}" class="hero-btn">
                     Apply for <strong>Quick Loan</strong>
@@ -84,16 +83,44 @@
             </h2>
         </div>
 
-        <div class="partner-slider">
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/36.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/37.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/38.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/1.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/14.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/9.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/26.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/20.jpg" alt="Partner"></div>
-            <div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/32.jpg" alt="Partner"></div>
+        <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/36.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/37.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/38.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col d-none d-md-block"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/1.jpg" alt="Partner"></div></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/14.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/9.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/26.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col d-none d-md-block"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/20.jpg" alt="Partner"></div></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/32.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/1.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/36.jpg" alt="Partner"></div></div>
+                        <div class="col-4 col-md-3 partner-col d-none d-md-block"><div class="partner-item"><img src="{{ MEDIA_IMG_URL }}images/37.jpg" alt="Partner"></div></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev custom-control border-0 bg-transparent" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control-next custom-control border-0 bg-transparent" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
 
     </div>
@@ -101,12 +128,11 @@
 
 <section class="process-section">
     <div class="container">
-
         <div class="process-grid">
 
             <div class="process-video">
                 <video autoplay muted loop playsinline>
-                    <source src="{{ MEDIA_IMG_URL }}videos/Website.mp4" type="video/mp4">
+                    <source src="{{ MEDIA_IMG_URL }}Website.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -115,7 +141,6 @@
                 <h2>The Finwizz Process – <strong>How It Works</strong></h2>
 
                 <div class="accordion">
-
                     <div class="accordion-item active">
                         <div class="accordion-title">
                             <i class="fas fa-edit"></i> Apply
@@ -180,12 +205,10 @@
                             Amount will be credited to your bank account after submission of post-sanction documents.
                         </div>
                     </div>
-
                 </div>
 
             </div>
         </div>
-
     </div>
 </section>
 
@@ -233,68 +256,128 @@
             <h2>Words from happy customers</h2>
         </div>
 
-        <div class="testimonial-slider">
-
-            <div class="testimonial-card">
-                <img src="{{ MEDIA_IMG_URL }}images/t5.png" alt="Darshan P">
-                <div class="stars">★★★★★</div>
-                <p>
-                    I received a good service provided by Finwizz. The documentation and other process was very easy and fast. I will surely recommend Finwizz to my friends.
-                </p>
-                <h4>Darshan P, Mysore</h4>
-                <span>Software Engineer</span>
+        <div id="testimonialCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000">
+            
+            <div class="carousel-indicators custom-indicators">
+                <button type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
 
-            <div class="testimonial-card">
-                <img src="{{ MEDIA_IMG_URL }}images/t2.png" alt="Madhu B S">
-                <div class="stars">★★★★★</div>
-                <p>
-                    I got my personal loan at less rate of interest. Thanks for quick and fast service.
-                </p>
-                <h4>Madhu B S, Bangalore</h4>
-                <span>Senior Structural Design Engineer</span>
-            </div>
+            <div class="carousel-inner testimonial-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="{{ MEDIA_IMG_URL }}images/t5.png" alt="Darshan P">
+                                <div class="stars">★★★★★</div>
+                                <p>I received a good service provided by Finwizz. The documentation and other process was very easy and fast. I will surely recommend Finwizz to my friends.</p>
+                                <h4>Darshan P, Mysore</h4>
+                                <span>Software Engineer</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="{{ MEDIA_IMG_URL }}images/t2.png" alt="Madhu B S">
+                                <div class="stars">★★★★★</div>
+                                <p>I got my personal loan at less rate of interest. Thanks for quick and fast service.</p>
+                                <h4>Madhu B S, Bangalore</h4>
+                                <span>Senior Structural Design Engineer</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="{{ MEDIA_IMG_URL }}images/t1.png" alt="Virali Shah">
+                                <div class="stars">★★★★★</div>
+                                <p>My experience of availing a homeloan and car loan via Finwizz was fantastic. There was a regular follow up from Finwizz team. They keep updating me once a day on my loan status.</p>
+                                <h4>Virali Shah, Mumbai</h4>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="testimonial-card">
-                <img src="{{ MEDIA_IMG_URL }}images/t1.png" alt="Virali Shah">
-                <div class="stars">★★★★★</div>
-                <p>
-                    My experience of availing a homeloan and car loan via Finwizz was fantastic. There was a regular follow up from Finwizz team. They keep updating me once a day on my loan status.
-                </p>
-                <h4>Virali Shah, Mumbai</h4>
-                <span>Customer</span>
-            </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="{{ MEDIA_IMG_URL }}images/t6.png" alt="Pradeep Gowda">
+                                <div class="stars">★★★★★</div>
+                                <p>Finwizz provided good service to get my personal loan. The team guided me with all the details regarding rate of interest. I am very happy with the service.</p>
+                                <h4>Pradeep Gowda, Bangalore</h4>
+                                <span>Business Development Manager</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="{{ MEDIA_IMG_URL }}images/t3.png" alt="Syed Abdur Rahaman">
+                                <div class="stars">★★★★★</div>
+                                <p>I have no words to express my deepest gratitude for all the guidance and support given by you and the team of Finwizz.</p>
+                                <h4>Syed Abdur Rahaman, Pune</h4>
+                                <span>Senior Software Developer</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="testimonial-card">
+                                <img src="{{ MEDIA_IMG_URL }}images/t4.png" alt="Joyce Almeida">
+                                <div class="stars">★★★★★</div>
+                                <p>I was going pillar to post to get my personal loan on an emergency need. Finwizz team came as a treasure, as they processed my loan with variety of options in a short while.</p>
+                                <h4>Joyce Almeida</h4>
+                                <span>CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="testimonial-card">
-                <img src="{{ MEDIA_IMG_URL }}images/t6.png" alt="Pradeep Gowda">
-                <div class="stars">★★★★★</div>
-                <p>
-                    Finwizz provided good service to get my personal loan. The team guided me with all the details regarding rate of interest. I am very happy with the service.
-                </p>
-                <h4>Pradeep Gowda, Bangalore</h4>
-                <span>Business Development Manager</span>
             </div>
+        </div>
 
-            <div class="testimonial-card">
-                <img src="{{ MEDIA_IMG_URL }}images/t3.png" alt="Syed Abdur Rahaman">
-                <div class="stars">★★★★★</div>
-                <p>
-                    I have no words to express my deepest gratitude for all the guidance and support given by you and the team of Finwizz.
-                </p>
-                <h4>Syed Abdur Rahaman, Pune</h4>
-                <span>Senior Software Developer</span>
+        <div id="testimonialCarouselMobile" class="carousel slide d-block d-md-none" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner testimonial-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/t5.png" alt="Darshan P">
+                        <div class="stars">★★★★★</div>
+                        <p>I received a good service provided by Finwizz. The documentation and other process was very easy and fast. I will surely recommend Finwizz to my friends.</p>
+                        <h4>Darshan P, Mysore</h4>
+                        <span>Software Engineer</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/t2.png" alt="Madhu B S">
+                        <div class="stars">★★★★★</div>
+                        <p>I got my personal loan at less rate of interest. Thanks for quick and fast service.</p>
+                        <h4>Madhu B S, Bangalore</h4>
+                        <span>Senior Structural Design Engineer</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/t1.png" alt="Virali Shah">
+                        <div class="stars">★★★★★</div>
+                        <p>My experience of availing a homeloan and car loan via Finwizz was fantastic. There was a regular follow up from Finwizz team.</p>
+                        <h4>Virali Shah, Mumbai</h4>
+                        <span>Customer</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="{{ MEDIA_IMG_URL }}images/t6.png" alt="Pradeep Gowda">
+                        <div class="stars">★★★★★</div>
+                        <p>Finwizz provided good service to get my personal loan. The team guided me with all the details regarding rate of interest.</p>
+                        <h4>Pradeep Gowda, Bangalore</h4>
+                        <span>Business Dev Manager</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="testimonial-card">
-                <img src="{{ MEDIA_IMG_URL }}images/t4.png" alt="Joyce Almeida">
-                <div class="stars">★★★★★</div>
-                <p>
-                    I was going pillar to post to get my personal loan on an emergency need. Finwizz team came as a treasure, as they processed my loan with variety of options in a short while.
-                </p>
-                <h4>Joyce Almeida</h4>
-                <span>CEO</span>
-            </div>
-
+            
+            <button class="carousel-control-prev custom-control-white border-0 bg-transparent" type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control-next custom-control-white border-0 bg-transparent" type="button" data-bs-target="#testimonialCarouselMobile" data-bs-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
 
     </div>
@@ -303,5 +386,5 @@
 {% endblock %}
 
 {% block extra_js %}
-<script src="{{ MEDIA_BLOG_URL }}js/home.js"></script>
+<script src="{{ MEDIA_BLOG_URL }}js/index.js"></script>
 {% endblock %}
